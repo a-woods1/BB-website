@@ -1,3 +1,4 @@
+  <div id="header">
     <div class="row">
       <div class="col-6">
         <a class="main_a" href="{{ url_for('home') }}">
@@ -5,11 +6,19 @@
         </a>
       </div>
       <div class="col-6 d-none d-lg-block">
-        <ul id="main_ul">
-          <li><a class="main_a" href="{{ url_for('home') }}">Section 1</a></li>
-          <li><a class="main_a" data-scroll href="#skills">Section 2</a></li>
-          <li><a class="main_a" data-scroll href="#about">Section 3</a></li>
-          <li><a class="main_a" data-scroll href="#contact">Section 4</a></li>
+        <ul id="main_ul" class="menu">
+          <li class="main_li">
+            <a class="main_a" href="{{ url_for('home') }}">Prototype</a>
+          </li>
+          <li class="main_li">
+            <a class="main_a" href="{{ url_for('home') }}">Story</a>
+          </li>
+          <li class="main_li">
+            <a class="main_a" href="{{ url_for('team') }}">Team</a>
+          </li>
+          <li class="main_li">
+            <a class="main_a" href="{{ url_for('blog') }}">Blog</a>
+          </li>
         </ul>
       </div>
       <div id="menu_bars" class="col-6 d-lg-none d-xl-none">
@@ -18,9 +27,9 @@
         </a>
       </div>
     </div>
+  </div> <!--end header-->
     <div class="row">
       <div class="col-12 d-none d-lg-block">
-        <hr id="main_hr" />
       </div>
     </div>
 
@@ -33,13 +42,13 @@
         <div id="modal_row" class="row">
           <div id="modal_ul" class="col-12">
             <ul>
-              <li><a class="modal_a" onClick="closeModal();" href="#main">Section 1</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="#main">Prototype</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#skills">Section 2</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="#story">Story</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#about">Section 3</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="#team">Team</a></li>
               <li><hr class="modal_hr" /></li>
-              <li><a class="modal_a" onClick="closeModal();" href="#contact">Section 4</a></li>
+              <li><a class="modal_a" onClick="closeModal();" href="#blog">Blog</a></li>
             </ul>
           </div>
         </div>

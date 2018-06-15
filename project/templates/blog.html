@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Team Bloomberg</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+  </head>
+
+  <body id="main">
+    <!--<div id="for_testing"></div>-->
+
+    <!-- Header -->
+    <div class="container">
+    {% include "header.html" %}
+
+    <!-- Portfolio -->
+    <div id="main_page">
+      <section id="portfolio">
+        <div class="masonry">
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+          <div class="portfolio_image">
+            <a href="{{ url_for('blog') }}">
+              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            </a>
+          </div>
+
+        </div>
+        <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
+      </section><!-- end portfolio section -->
+
+    </div><!-- End main page -->
+
+{% include "footer.html" %}
+  </body>
+</html>
