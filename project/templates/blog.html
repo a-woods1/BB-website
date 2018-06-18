@@ -19,10 +19,19 @@
 
   <body id="main">
     <!--<div id="for_testing"></div>-->
-
+  {% include "header.html" %}
+  <div id="page_title">
+    <div class="row">
+      <div class="col-6">
+    Follow our progress as we work toward a more inclusive hiring experience
+  </div>
+  <div class="col-6">
+</div>
+</div>
+  </div>
     <!-- Header -->
     <div class="container">
-    {% include "header.html" %}
+
 
     <!-- Portfolio -->
     <div id="main_page">
@@ -30,59 +39,57 @@
         <div class="masonry">
 
           <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+            <a href="{{ url_for('blog_week_4') }}">
+              <div class="item">
+                <img class="blog_image" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+                <div class="blog_week">Week 04</div>
+                <div class="blog_title">Buy a Feature, Any Feature</div>
+                <div class="blog_description">...</div>
+              </div>
             </a>
           </div>
 
           <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            <a href="{{ url_for('blog_week_3') }}">
+              <div class="item">
+                <img class="blog_image" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+                <div class="blog_week">Week 03</div>
+                <div class="blog_title">Finding a New Need</div>
+                <div class="blog_description">...</div>
+              </div>
             </a>
           </div>
 
           <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            <a href="{{ url_for('blog_week_2') }}">
+              <div class="item">
+                <img class="blog_image" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+                <div class="blog_week">Week 02</div>
+                <div class="blog_title">Starting to Sprint</div>
+                <div class="blog_description">...</div>
+              </div>
             </a>
           </div>
 
           <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
+            <a href="{{ url_for('blog_week_1') }}">
+              <div class="item">
+                <img class="blog_image" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+                <div class="blog_week">Week 01</div>
+                <div class="blog_title">Welcome to New York!</div>
+                <div class="blog_description">...</div>
+              </div>
             </a>
           </div>
 
-          <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
-            </a>
-          </div>
 
-          <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
-            </a>
-          </div>
-
-          <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
-            </a>
-          </div>
-
-          <div class="portfolio_image">
-            <a href="{{ url_for('blog') }}">
-              <img class="item" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image" />
-            </a>
-          </div>
 
         </div>
         <div style="text-align: center;"><a id="show_more" class="d-md-none d-lg-none d-xl-none">Show More</a></div>
       </section><!-- end portfolio section -->
 
     </div><!-- End main page -->
-
+    </div><!-- end container -->
 {% include "footer.html" %}
   </body>
 </html>
