@@ -2,7 +2,9 @@
     <div class="row">
       <div class="col-6">
         <a class="main_a" href="{{ url_for('home') }}">
-          <span id="logo">Logo</span>
+          <span id="logo">
+            <img src="{{ url_for('static', filename='assets/images/teamlogo.png') }}">
+          </span>
         </a>
       </div>
       <div class="col-6 d-none d-lg-block">
