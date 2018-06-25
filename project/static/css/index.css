@@ -4,18 +4,21 @@
 }
 
 .container {
-  width: 70%;
-  margin-top: 5%;
+  width: 80%;
+  /*margin-top: -13%;*/
+  background-color: white;
 }
 #main_page {
-  width: 100%;
-  margin-top: 5%;
+  width: 90%;
+  /*margin-top: 5%;*/
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 body {
   font-family: Roboto;
   font-size: 12px;
+  background-color: grey;
 }
 
 #subhead {
@@ -210,9 +213,38 @@ h6 {
   /*width: 100%;*/
 }
 
+.header_space{
+  width: 100%;
+  height: 150px;;
+}
+
 .blog_image{
   width: 100%;
 }
+
+.all_posts{
+  font-size: 10px;
+}
+
+.blog_week{
+  font-size: 10px;
+}
+
+.blog_date{
+  font-size: 10px;
+  font-color: grey;
+}
+
+.decorative_icon{
+  width: 50px;
+  height: 10px;
+}
+
+.blog_photo{
+  width: 250px;
+  height: 250px;
+}
+
 .portfolio_image {
   position: relative;
   display: inline-block;

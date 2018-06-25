@@ -1,60 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Page title</title>
+  <title>Team Bloomberg</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 
-  </head>
+</head>
 
   <body id="main">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
  <div id="page_title">
-    <div class="row">
-      <div class="col-lg-8 col-sm-12">
-    We are a cross-disciplinary team with backgrounds in education, artificial intelligence, journalism and design
-  </div>
+   <div class="row">
+     <div class="col-8">
+   We are a cross-discliplinary team with backgrounds in education, computer science, journalism, and design.
+ </div>
+</div>
+</div>
+
+<div class="row">
   <div class="col-6">
+    <div class="decorative_icon">TEAM</div>
+    <p>We are a team of five HCI Master's students at Carnegie Meloon University with a diverse set of backgrounds. While this is our first foray into researching and designing for accessibility, we are all passionate about creating more equitable, accessible experiences with the help of technology.</p>
+</div>
+<div class="col-6">
+<img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
 </div>
 </div>
+
+<div class="row">
+  <div class="col-4">
+    <div team_member>Aaron Faucher</div>
   </div>
+  <div class="col-4">
+    <h2>I came to CMU from San Francisco, where I was working as a freelance interaction designer and developer for several AR/VR startups.</h2>
+    <p>I’m passionate about the ways emerging technologies can improve well-being. Prior to my design career, I had previous lives as an audio engineer and high school teacher.</p>
+  </div>
+  <div class="col-4">
 
-     <div class="row">
-         <div class="col-12">
-            <div id="subhead">
-                    <h4> TEAM </h4>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-12">
-                        We are a team of five HCI Master’s students at Carnegie Mellon University, with a diverse set of backgrounds. While this is our first foray into researching and designing for accessibility, we are all passionate about creating more equitable, accessible experiences with the help of technology.
-                        </div>
-                    </div> 
-            </div>
-        </div>
-     </div>
+    <p>LINKS</p>
+    <a href="https://www.linkedin.com/in/aaronfaucher">LinkedIn</a> <br/>
+    <a href="http://afaucher.me/">Portfolio</a> <br/>
+    <a href="https://github.com/afauch">GitHub</a> <br/>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-4">
+    <div team_member>Jinping Liu</div>
+  </div>
+  <div class="col-4">
+    <h2>I am a UX designer with 3 years of experience working at companies like Nokia and Tencent.</h2>
+    <p>Before MHCI, I had another master degree in industrial design in Finland. Years of working and living there had added a Nordic touch to my design style. Besides that, I am a good cook and travel lover.</p>
+  </div>
+  <div class="col-4">
+    <p>LINKS</p>
+    <a href="https://www.linkedin.com/in/aaronfaucher">LinkedIn</a> <br/>
+    <a href="http://afaucher.me/">Portfolio</a> <br/>
+    <a href="https://github.com/afauch">GitHub</a> <br/>
+  </div>
+</div>
 
-    <!-- Header -->
-    <div class="container">
+<div class="row">
+  <div class="col-4">
+    <div team_member>Likang Sun</div>
+  </div>
+  <div class="col-4">
+    <h2>Before MHCI, I have a Master’s Degree in Education from Stanford University and have been a public school teacher for 5 years in California.</h2>
+    <p>I’m passionate about the ways emerging technologies can improve well-being. Prior to my design career, I had previous lives as an audio engineer and high school teacher.</p>
+  </div>
+  <div class="col-4">
+    <p>LINKS</p>
+    <a href="https://www.linkedin.com/">LinkedIn</a> <br/>
+    <a href="http://aubriewoods.com/">Portfolio</a> <br/>
+    <a href="https://github.com/">GitHub</a> <br/>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-4">
+    <div team_member>Asha Toulmin</div>
+  </div>
+  <div class="col-4">
+    <h2>Prior to the MHCI program I spent six years at Google working on business strategy, sales, operations as well as hiring and diversity and inclusion.</h2>
+    <p>I was originally born in London, but raised in the U.S., retaining a love of tea and British murder mysteries.</p>
+  </div>
+  <div class="col-4">
 
-    <!-- Portfolio -->
-    <div id="main_page">
+    <p>LINKS</p>
+    <a href="https://www.linkedin.com/">LinkedIn</a> <br/>
+    <a href="http://aubriewoods.com/">Portfolio</a> <br/>
+    <a href="https://github.com/">GitHub</a> <br/>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-4">
+    <div team_member>Aubrie Woods</div>
+  </div>
+  <div class="col-4">
+    <h2>I am a software engineer, UX designer, and researcher currently working for Carnegie Mellon’s Software Engineering Institute.</h2>
+    <p>Originally from San Francisco, I received my Master’s degree in Computer Science (Artificial Intelligence) from Stanford University before joining the MHCI program. I love to travel, and am thrilled to be relocating to New York this summer.</p>
+  </div>
+  <div class="col-4">
 
+    <p>LINKS</p>
+    <a href="https://www.linkedin.com/">LinkedIn</a> <br/>
+    <a href="http://aubriewoods.com/">Portfolio</a> <br/>
+    <a href="https://github.com/">GitHub</a> <br/>
+  </div>
+</div>
 
-    </div><!-- End main page -->
-    </div><!-- end container -->
     {% include "footer.html" %}
   </body>
 </html>
