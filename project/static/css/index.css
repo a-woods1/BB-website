@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
   font-family: Roboto-Black;
   src: url(../fonts/Roboto-Black.ttf);
 }
@@ -71,23 +76,28 @@ h1 {
   text-align: center;
   font-family: Roboto-Black;
   font-weight: bold;
-  text-transform: uppercase;
 }
 h2 {
   font-size: 18px;
   font-family: Roboto-Regular;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 h3 {
   font-family: Roboto-Black;
-  font-size: 18px;
-  line-height: 3;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.83;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 h4 {
-  font-family: Roboto-Black;
-  font-size: 14px;
+  font-family: Roboto-Bold;
+  font-size: 8px;
   line-height: 1;
   font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 h5 {
   font-family: Roboto-Black;
@@ -116,7 +126,8 @@ h6 {
 
 #header{
   background-color: #353535;
-  padding: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #page_title{
@@ -124,8 +135,7 @@ h6 {
   font-weight: 900;
   color: white;
   font-size: 56px;
-  padding: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 125px;
 }
 
 #main_ul {
@@ -166,7 +176,23 @@ h6 {
   top: -100px;
 }
 
+.team_links {
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  color: black;
+  border-bottom: 2px #fcbc00 solid;
+}
+
+.team_links:hover {
+  font-family: Roboto-Bold;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px #fcbc00 solid;
+}
+
 .team_member{
+  text-align: right;
   font-weight: 900;
 }
 #menu_bars {
@@ -194,11 +220,9 @@ h6 {
 }
 .modal_a {
   color: #FFFFFF;
-  text-transform: uppercase;
 }
 .modal_a:hover {
   color: #FFFFFF;
-  text-transform: uppercase;
   text-decoration: none;
   /* no underline */
 }
@@ -394,12 +418,7 @@ h6 {
   opacity: 1;
   transition: all 0.4s ease-out;
 }
-.skills h2 {
-  margin-bottom: 24px;
-}
-.skills.bottom-row p {
-  margin-top: 48px;
-}
+
 #dev_skills_span {
   display: inline-block;
   text-align: left;
@@ -520,7 +539,7 @@ h6 {
   margin: 15px auto auto;
   font-size: 10pt;
   color: white;
-  background-color: #353535;
+  background-color: black;
   padding: 40px;
 }
 :placeholder-shown {
@@ -580,23 +599,29 @@ h6 {
     margin-bottom: 25px;
     font-family: Roboto-Regular;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
   }
   h2 {
     font-size: 18px;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Bold;
     font-weight: bold;
+    margin-bottom: 20px;
   }
   h3 {
-    font-family: Roboto-Regular;
-    font-size: 15px;
-    line-height: 4;
+    font-family: Roboto-Black;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.83;
+    margin-bottom: 12px;
+    text-transform: uppercase;
   }
   h4 {
-    font-family: Roboto-Regular;
-    font-size: 11px;
+    font-family: Roboto-Bold;
+    font-size: 8px;
     line-height: .75;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
   h5 {
     font-family: Roboto-Regular;
@@ -769,23 +794,28 @@ h6 {
     line-height: 64px;
     font-family: Roboto-Regular;
     font-weight: bold;
-    text-transform: uppercase;
   }
   h2 {
     font-size: 18px;
     font-family: Roboto-Regular;
     font-weight: bold;
+    margin-bottom: 20px;
   }
   h3 {
-    font-family: Roboto-Regular;
-    font-size: 14px;
-    line-height: 4;
+    font-family: Roboto-Black;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.83;
+    margin-bottom: 12px;
+    text-transform: uppercase;
   }
   h4 {
-    font-family: Roboto-Regular;
-    font-size: 10px;
+    font-family: Roboto-Bold;
+    font-size: 8px;
     line-height: .75;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
   }
   h5 {
     font-family: Roboto-Regular;
@@ -801,6 +831,8 @@ h6 {
   }
   p {
     font-size: 12px;
+    margin-bottom: 30px;
+    line-height: 1.67;
   }
   /* Portfolio */
   .masonry {
@@ -964,24 +996,28 @@ h6 {
     line-height: 64px;
     font-family: Roboto-Regular;
     font-weight: bold;
-    text-transform: uppercase;
   }
   h2 {
     font-size: 18px;
     font-family: Roboto-Regular;
     font-weight: bold;
+    margin-bottom: 20px;
   }
   h3 {
-    font-family: Roboto-Regular;
-    font-size: 16px;
-    line-height: 3;
+    font-family: Roboto-Black;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.83;
+    margin-bottom: 12px;
+    text-transform: uppercase;
   }
   h4 {
-  font-family: Roboto-Regular;
-  font-size: 12px;
+  font-family: Roboto-Bold;
+  font-size: 8px;
   font-weight: 900;
   padding-bottom: 15px;
-}
+  text-transform: uppercase;
+  margin-bottom: 15px;
   }
   h5 {
     font-family: Roboto-Regular;
@@ -1381,28 +1417,28 @@ body .ui_box:hover {
 }
 
 .animatable {
-  
+
   /* initially hide animatable objects */
   visibility: hidden;
-  
+
   /* initially pause animatable objects their animations */
-  -webkit-animation-play-state: paused;   
-  -moz-animation-play-state: paused;     
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
   -ms-animation-play-state: paused;
-  -o-animation-play-state: paused;   
-  animation-play-state: paused; 
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* show objects being animated */
 .animated {
   visibility: visible;
-  
+
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   -o-animation-fill-mode: both;
   animation-fill-mode: both;
-  
+
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   -ms-animation-duration: 1s;
@@ -1499,7 +1535,7 @@ body .ui_box:hover {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  
+
   animation-direction: forwards;
   // animation-fill-mode: both;
   animation-duration: 3.4s;
@@ -1539,12 +1575,12 @@ body .ui_box:hover {
   position: absolute;
   height: 5px;
   width: 300px;
-  bottom: 3em; 
+  bottom: 3em;
   left: 5%;
   transform-origin: 50% 50%;
   transform: rotateZ(13deg);
   animation-duration: 3.4s;
-  animation-direction: forwards; 
+  animation-direction: forwards;
   animation-iteration-count: infinite;
   animation-name: rock;
   animation-timing-function: ease-in-out;
@@ -1552,7 +1588,7 @@ body .ui_box:hover {
 
 @keyframes bounce-one {
   0% {
-    transform: translateY(0em); 
+    transform: translateY(0em);
   }
   32% {
     transform: translateY(15.33em);
@@ -1564,13 +1600,13 @@ body .ui_box:hover {
     transform: translateY(15.33em);
   }
   100% {
-    transform: translateY(0em); 
+    transform: translateY(0em);
   }
 }
 
 @keyframes bounce-two {
   0% {
-    transform: translateY(0em); 
+    transform: translateY(0em);
   }
   14% {
     transform: translateY(0em);
@@ -1582,7 +1618,7 @@ body .ui_box:hover {
     transform: translateY(0em);
   }
   100% {
-    transform: translateY(0em); 
+    transform: translateY(0em);
   }
 }
 
