@@ -539,7 +539,7 @@ h6 {
   margin: 15px auto auto;
   font-size: 10pt;
   color: white;
-  background-color: black;
+  background-color: #353535;
   padding: 40px;
 }
 :placeholder-shown {
@@ -1641,4 +1641,38 @@ body .ui_box:hover {
   100% {
     transform: rotateZ(13deg);
   }
+}
+
+/* post it notes */
+
+#post-its{
+  background-color:#ecf0f1;
+  height:110vh;
+  padding: 100px;
+}
+.topBar{
+  position:absolute;
+  width:200px;
+  height:40px;
+  background-color:#f39c12;
+}
+.form{
+  margin-top:40px;
+  position:absolute;
+  width:200px;
+  height:160px;
+  background-color:#f1c40f;
+}
+.textAria{
+  position:absolute;
+  border-color:red;
+  width:180px;
+  height:140px;
+  position:absolute;
+  margin:10px;
+  font-family: 'Lato', sans-serif;
+  overflow:hide;
+}
+.textAria:focus{
+  outline: 0;
 }
