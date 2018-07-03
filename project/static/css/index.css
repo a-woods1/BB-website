@@ -1545,17 +1545,33 @@ body .ui_box:hover {
 
 #ball1 {
   animation-name: bounce-one;
-  background-color: #3e82f7;
+  background-color: #7eb1ff;
   position: absolute;
   left: 25px;
 }
 
 #ball2 {
   animation-name: bounce-two;
-  background-color: gray;
+  background-color: grey;
   position: absolute;
   left: 250px;
   bottom: 15px;
+}
+
+.ball-solid {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position:relative;
+  background-color: grey;
+  margin-left:5%;
+  margin-top:5%;
+  filter:drop-shadow(16px 16px 10px grey);
+}
+
+
+#balls{
+  align-items: center;
 }
 
 #pivot {
@@ -1645,26 +1661,13 @@ body .ui_box:hover {
 
 /* post it notes */
 
-#post-its{
-  background-color:#ecf0f1;
-  height:110vh;
-  padding: 100px;
-}
-.topBar{
-  position:absolute;
-  width:200px;
-  height:40px;
-  background-color:#f39c12;
-}
 .form{
   margin-top:40px;
-  position:absolute;
   width:200px;
   height:160px;
-  background-color:#f1c40f;
+  background-color:#7eb1ff;
 }
 .textAria{
-  position:absolute;
   border-color:red;
   width:180px;
   height:140px;

@@ -1,9 +1,3 @@
-$(function(){
-  $("#postIt").draggable({
-    handle:  '.topBar',
-    }); 
-});
-
 
 // Trigger CSS animations on scroll.
 // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
@@ -41,6 +35,7 @@ jQuery(function($) {
   $(window).trigger('scroll');
 
 });
+
 
 
 
