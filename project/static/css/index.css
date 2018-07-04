@@ -14,12 +14,12 @@
 }
 
 .container {
-  width: 80%;
+  /*width: 80%;*/
   /*margin-top: -13%;*/
   background-color: white;
 }
 #main_page {
-  width: 90%;
+  /*width: 90%;*/
   /*margin-top: 5%;*/
   margin-left: auto;
   margin-right: auto;
@@ -68,7 +68,9 @@ body {
 }
 #heading {
   font-family: Roboto-Black;
-  font-size:56px;
+  font-size: 56px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h1 {
   font-size: 30px;
@@ -125,6 +127,8 @@ h6 {
 /* Header */
 
 #header{
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #353535;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -167,6 +171,8 @@ h6 {
 
 #team_first_row{
   background-color: #f7f7f7;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #team_photo{
@@ -536,12 +542,24 @@ h6 {
   background-color: #F2F1F1;
 }
 #copyright {
-  margin: 15px auto auto;
-  font-size: 10pt;
+  /*margin: 15px auto auto;*/
+  font-family: Roboto-Black;
+  font-size: 16px;
   color: white;
-  background-color: #353535;
-  padding: 40px;
+  background-color: #000000; /*Note: this is black in the design, not #353535*/
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+#university{
+  letter-spacing: 1px;
+}
+.degree_program{
+  font-family: Roboto-Regular;
+}
+
 :placeholder-shown {
   font-family: Palatino;
   font-size: 14px;
