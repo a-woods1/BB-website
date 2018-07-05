@@ -14,10 +14,9 @@
 }
 
 .container {
-  /*width: 80%;*/
-  /*margin-top: -13%;*/
   background-color: white;
 }
+
 #main_page {
   /*width: 90%;*/
   /*margin-top: 5%;*/
@@ -265,7 +264,7 @@ h6 {
 
 .header_space{
   width: 100%;
-  height: 150px;;
+  height: 75px;
 }
 
 .blog_image{
@@ -274,15 +273,47 @@ h6 {
 
 .all_posts{
   font-size: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+
+.blog_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12%;
+  background-color: white;
+}
+
+.blog_page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
 }
 
 .blog_week{
   font-size: 10px;
+  font-color: red;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
 }
 
 .blog_date{
   font-size: 10px;
   font-color: grey;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+#blog_footer{
+  background-color: white;
+}
+
+.blog_footer_week{
+  text-transform: uppercase;
 }
 
 .decorative_icon{
@@ -575,8 +606,9 @@ h6 {
     font-size: 12px;
   }
   /* Header */
-  .container {
+  .blog_page {
     width: 90%;
+    background-color: white;
   }
 
   #subhead {
