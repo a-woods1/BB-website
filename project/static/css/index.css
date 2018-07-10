@@ -14,12 +14,11 @@
 }
 
 .container {
-  width: 80%;
-  /*margin-top: -13%;*/
   background-color: white;
 }
+
 #main_page {
-  width: 90%;
+  /*width: 90%;*/
   /*margin-top: 5%;*/
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +68,9 @@ body {
 }
 #heading {
   font-family: Roboto-Black;
-  font-size:56px;
+  font-size: 56px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #heading2 {
@@ -133,6 +134,8 @@ h6 {
 /* Header */
 
 #header{
+  padding-left: 5%;
+  padding-right: 5%;
   background-color: #353535;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -177,7 +180,12 @@ h6 {
 
 #team_first_row{
   background-color: #f7f7f7;
+<<<<<<< HEAD
   padding-top:5%;
+=======
+  padding-left: 5%;
+  padding-right: 5%;
+>>>>>>> 5dabcc195b25c935e9a7bbecf9ece3af6f3a64f8
 }
 
 #team_photo{
@@ -276,7 +284,7 @@ h6 {
 
 .header_space{
   width: 100%;
-  height: 150px;;
+  height: 75px;
 }
 
 .blog_image{
@@ -284,16 +292,56 @@ h6 {
 }
 
 .all_posts{
+<<<<<<< HEAD
   font-size: 20px;
 }
 
 .blog_week{
   font-size: 20px;
+=======
+  font-size: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+
+.blog_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -12%;
+  background-color: white;
+}
+
+.blog_page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3%;
+}
+
+.blog_week{
+  font-size: 10px;
+  font-color: red;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
+>>>>>>> 5dabcc195b25c935e9a7bbecf9ece3af6f3a64f8
 }
 
 .blog_date{
   font-size: 10px;
   font-color: grey;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+
+#blog_footer{
+  background-color: white;
+}
+
+.blog_footer_week{
+  text-transform: uppercase;
 }
 
 .decorative_icon{
@@ -553,12 +601,24 @@ h6 {
   background-color: #F2F1F1;
 }
 #copyright {
-  margin: 15px auto auto;
-  font-size: 10pt;
+  /*margin: 15px auto auto;*/
+  font-family: Roboto-Black;
+  font-size: 16px;
   color: white;
-  background-color: #353535;
-  padding: 40px;
+  background-color: #000000; /*Note: this is black in the design, not #353535*/
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+#university{
+  letter-spacing: 1px;
+}
+.degree_program{
+  font-family: Roboto-Regular;
+}
+
 :placeholder-shown {
   font-family: Palatino;
   font-size: 14px;
@@ -574,8 +634,9 @@ h6 {
     font-size: 12px;
   }
   /* Header */
-  .container {
+  .blog_page {
     width: 90%;
+    background-color: white;
   }
 
   #subhead {
