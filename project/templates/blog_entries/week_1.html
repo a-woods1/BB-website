@@ -21,16 +21,29 @@
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-<div id="page_title">
-  <a class="all_posts">SEE ALL POSTS</a>
-  <div class="blog_week">WEEK 1</div>
-  <div class="row">
-    <div class="col-8">
-  Welcome to New York!
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Welcome to New York! 
+           <div class="blog_week">WEEK 1</div>
+        </div>
+       <div class="col-6">
 </div>
 </div>
-<div class="header_space"></div>
-</div>
+  </div>
+
+
+
+
+
     <!-- Header -->
     <div class="container">
     <!-- Portfolio -->

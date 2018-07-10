@@ -20,14 +20,95 @@
   <body id="main">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
+
+
+  <div id="page_title">
+    <div class="row">
+      <div class="col-1"></div>
+
+      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    </div>
+
+        <div class="row">
+                <div class="col-1"></div>
+
+          <div id="heading" class="col-7">Welcome to New York! 
+           <div class="blog_week">WEEK 1</div>
+        </div>
+       <div class="col-6">
+</div>
+</div>
+  </div>
+
+
+
+
+
     <!-- Header -->
     <div class="container">
-
-
     <!-- Portfolio -->
     <div id="main_page">
-
-
+      <img class="decorative_icon" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+      <div class="blog_date">JUNE 6, 2018</div>
+      <h2>If you're going to run a marathon, make sure you take the last few weeks off.</h2>
+      <p>It may sound counterintuitive, but the concept of “tapering” is a critical part of marathon training. Tapering is the idea of reducing your training in the last few weeks, in order to make you stronger, mentally and physically, for the big day.</p>
+      <p>Our team has been doing our own version of “tapering” this week, using our time together to <b>refuel, reflect, and re-energize</b> for our marathon summer ahead: </p>
+      <h2>Refuel: How can we quickly acclimate to a new culture?</h2>
+      <p>This summer we’re thrilled to be working on site with our Bloomberg clients in their New York City office. This has involved new apartments, new work culture and new work technology (including the intimidatingly efficient Bloomberg Terminal). Although we were already familiar with Bloomberg’s work culture from our Spring semester research, inhabiting the space on an ongoing basis has already felt different, and will hopefully lead us to even more insights about how Bloomberg works.</p>
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+      <div class="photo_caption">Jinping in our new office space -- slightly better view than our room in Pittsburgh!</div>
+      <p>We made some cards to keep in our room that any team member can “play” at any time to ensure we are living these habits:</p>
+      <div class="row">
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>Ask three questions</b></p>
+          <p>When offering criticism, we will commit to asking at least three questions. This will not only help us better understand the thinking behind the criticism, but also allow us to be more generative.</p>
+        </div>
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>The QIE triangle</b></p>
+          <p>When making key decisions, surface the tension between Q (quality), I (inclusion) and E(efficiency). Using this card ensures we think about the current balance of all three elements.</p>
+        </div>
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>Use the whiteboard</b></p>
+          <p>When decision making/discussion has become a verbal back and forth, use this card to get everyone to draw their ideas at the whiteboard so we can all visualize what we are thinking.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>Decision time</b></p>
+          <p>When a discussion or meeting has gone on for too long without a decision that is made. The person to use this card must have a proposal for making the decision.</p>
+        </div>
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>Individual - Group - Individual</b></p>
+          <p>This card helps facilitate better working sessions by going through a individual - group - individual process, which gives individuals time to digest information before reaching a team agreement.</p>
+        </div>
+        <div class="col-4">
+          <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+          <p><b>Make it together</b></p>
+          <p>When two ideas/hypotheticals are in conflict, use this card to get both parties to create something with elements of both (in Sketch, on the whiteboard, in slides, etc)</p>
+        </div>
+      </div>
+      <p>We will continue to treat team issues like design problems, and invest more time up front to set us up for greater success later on.</p>
+      <h2>Re-energize: how will we move forward with our current design prompt?</h2>
+      <p>Our team had a great discussion (at the whiteboard!) to confirm our focus for the semester.</p>
+      <p>Our goal: To support people with disabilities to disclose what they need to get hired and perform in Bloomberg.</p>
+      <p>Questions involved in the disclosure experience currently include:</p>
+      <ul>
+        <li>Why - what is the purpose of disclosing my disability?</li>
+        <li>Who - who should I disclose to?</li>
+        <li>When - when is disclosure necessary? </li>
+        <li>How - how should I disclose?</li>
+        <li><b>Whether  - should I disclose at all?</b></li>
+      </ul>
+      <p>Among these questions, the team finds disrupting “whether to disclose” as the most interesting, as it involves giving more power to the person with a disability. We want to help people with disabilities make a more informed decision during their own disclosure experience. Some current measures of success for us will be making people with disabilities feel supported, eliminating surprises, and removing uncertainty during the disclosure experience.</p>
+      <p>From our Spring research, we also know there are a variety of factors that could make a person more or less likely to disclose a disability, which may be useful design considerations or constraints. Our team represented these factors using a visual model:</p>
+      <img class="blog_photo" src="{{ url_for('static', filename='assets/images/placeholder.png') }}" alt="Placeholder image"/>
+      <p>After considering the factors above our team realized we still need to make several decisions to narrow our scope (e.g. should we focus on people with visible or invisible disabilities?). However, we can still start prototyping right away! In fact, we think our designs will be able to help us make some of these scoping decisions later on. Another commitment for us this semester will be more making and research by design, and we hope you will help hold us to that.</p>
+      <p>See you next week at the starting line!</p>
     </div><!-- End main page -->
     </div><!-- end container -->
     {% include "footer.html" %}

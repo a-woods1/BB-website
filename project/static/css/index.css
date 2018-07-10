@@ -31,6 +31,7 @@ body {
   background-color: white;
 }
 
+
 #subhead {
     background-color:#d8d8d8;
     padding: 50px;
@@ -70,6 +71,13 @@ body {
   font-family: Roboto-Black;
   font-size:56px;
 }
+
+#heading2 {
+  font-family: Roboto-Black;
+  font-size:36px;
+  color: #353535;
+}
+
 h1 {
   font-size: 30px;
   margin-bottom: 100px;
@@ -130,6 +138,8 @@ h6 {
   padding-bottom: 50px;
 }
 
+
+
 #page_title{
   background-color: #353535;
   font-weight: 900;
@@ -167,6 +177,7 @@ h6 {
 
 #team_first_row{
   background-color: #f7f7f7;
+  padding-top:5%;
 }
 
 #team_photo{
@@ -194,7 +205,13 @@ h6 {
 .team_member{
   text-align: right;
   font-weight: 900;
+  padding-top: 15px;
 }
+
+#team_member_desc{
+  padding-top: 15px;
+}
+
 #menu_bars {
   font-size: 28px;
   text-align: right;
@@ -267,11 +284,11 @@ h6 {
 }
 
 .all_posts{
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .blog_week{
-  font-size: 10px;
+  font-size: 20px;
 }
 
 .blog_date{
@@ -1145,7 +1162,7 @@ body .ui ul {
 }
 
 body .ui_box {
-  height: 220px;
+  height: 270px;
   padding:50px;
   position: relative;
   background: #3d3d3d;
@@ -1170,66 +1187,32 @@ body .ui_box__inner .progress {
   background: rgba(0, 0, 0, 0.3);
   margin-bottom: 15px;
 }
-body .ui_box__inner .progress_graph {
-  float: right;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
-  width: 85px;
-  text-align: center;
-  position: relative;
-  padding-left: 20px;
-  top: 24px;
-}
-body .ui_box__inner .progress_graph__bar--1 {
-  width: 10px;
-  height: 20px;
-  background: #3e82f7;
-  float: left;
-  margin-right: 10px;
-  position: relative;
-  bottom: -10px;
-  -webkit-animation: graph 1s;
-}
-body .ui_box__inner .progress_graph__bar--2 {
-  width: 10px;
-  -webkit-animation: graph2 1s;
-  height: 30px;
-  float: left;
-  margin-right: 10px;
-  background: #3e82f7;
-}
-body .ui_box__inner .progress_graph__bar--3 {
-  width: 10px;
-  height: 24px;
-  margin-right: 10px;
-  -webkit-animation: graph3 1s;
-  background: #3e82f7;
-  float: left;
-  position: relative;
-  bottom: -6px;
-}
-body .ui_box__inner .progress_graph__bar--4 {
-  width: 10px;
-  height: 14px;
-  -webkit-animation: graph4 1s;
-  bottom: -16px;
-  position: relative;
-  background: #3e82f7;
-  float: left;
-}
+
+
 body .ui_box__inner .progress_bar {
   height: 6px;
   float: left;
-  width: 19%;
+  width: 19.0%;
   background: #3e82f7;
   -webkit-animation: bar 2s;
 }
-body .ui_box__inner .progress_bar--two {
+
+body .ui_box__inner .progress_bar_2 {
   height: 6px;
   float: left;
-  width: 78%;
+  width: 22%;
   background: #3e82f7;
   -webkit-animation: bar2 2s;
 }
+
+body .ui_box__inner .progress_bar_3 {
+  height: 6px;
+  float: left;
+  width: 8%;
+  background: #3e82f7;
+  -webkit-animation: bar3 2s;
+}
+
 body .ui_box h2 {
   font-weight: normal;
   font-size: 16px;
@@ -1310,7 +1293,7 @@ body .ui_box:hover {
     width: 0px;
   }
   to {
-    width: 58%;
+    width: 19%;
   }
 }
 
@@ -1319,7 +1302,7 @@ body .ui_box:hover {
     width: 0px;
   }
   to {
-    width: 58%;
+    width: 19%;
   }
 }
 @-webkit-keyframes bar2 {
@@ -1327,7 +1310,7 @@ body .ui_box:hover {
     width: 0px;
   }
   to {
-    width: 78%;
+    width: 21%;
   }
 }
 @keyframes bar2 {
@@ -1335,85 +1318,38 @@ body .ui_box:hover {
     width: 0px;
   }
   to {
-    width: 78%;
+    width: 21%;
   }
 }
-@-webkit-keyframes graph {
+
+@-webkit-keyframes bar3 {
   from {
-    height: 0px;
+    width: 0px;
   }
   to {
-    height: 20px;
+    width: 8%;
   }
 }
-@keyframes graph {
+@keyframes bar3 {
   from {
-    height: 0px;
+    width: 0px;
   }
   to {
-    height: 20px;
+    width: 8%;
   }
 }
-@-webkit-keyframes graph2 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 30px;
-  }
-}
-@keyframes graph2 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 30px;
-  }
-}
-@-webkit-keyframes graph3 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 24px;
-  }
-}
-@keyframes graph3 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 24px;
-  }
-}
-@-webkit-keyframes graph4 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 13px;
-  }
-}
-@keyframes graph4 {
-  from {
-    height: 0px;
-  }
-  to {
-    height: 13px;
-  }
-}
+
+
 #pop-out-section{
   padding-bottom:30px;
+  margin:10px;
 }
 
 /* quotes come in section */
 .block {
-  line-height: 5em;
-  background: #464646;
-  color: #fdfdfd;
+  color: #000000;
   text-align: center;
   margin: 1em auto;
-  text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
 }
 
 .animatable {
