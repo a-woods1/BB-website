@@ -7,9 +7,13 @@ from app import app, pages
 def home():
     return render_template('index.html')
 
-@app.route('/story/')
-def story():
-    return render_template('story.html')
+@app.route('/solution/')
+def solution():
+    return render_template('solution.html')
+
+@app.route('/process/')
+def process():
+    return render_template('process.html')
 
 @app.route('/team/')
 def team():
