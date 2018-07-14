@@ -1935,37 +1935,6 @@ time {
 }
 
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– 
-
-.timeline ul li::after {
-  transition: background .5s ease-in-out;
-}
-
-.timeline ul li.in-view::after {
-  background: #F45B69;
-}
-
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all .5s ease-in-out;
-}
-
-.timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
-}
-
-.timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
-}
-
-.timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
-}*/
-
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1995,4 +1964,9 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent;
   }
+}
+
+/* checklist */
+.checklist {
+  margin: auto;
 }
