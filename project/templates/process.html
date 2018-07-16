@@ -52,14 +52,14 @@
      <div class="row">
          <div class="col-12">
             <div id="subhead">
-                    <h4> THE CRITERIA </h4>
+                    <h4> OVERVIEW </h4>
                     <div class="row">
                         <div class="col-lg-12 col-sm-12">
-                        This is the problem some candidates with disabilities face. Imagine trying to convince a company to hire you, whilst simultaneously asking them for a favor. 
+                        The need for Magic8ball emerged from three months of research with Bloomberg during our Spring semester. Based on the problems that we identified, creating a web app to help both Bloomberg and candidates with disabilities handle accommodation requests was important. Candidates with disabilities were not always sure if they should disclose, and recruiters an recruiting coordinators did not always know how to best handle an accommodation request. 
                          <br/><br/>
 
 
-						These "favors" aren't really favors though. They are called accommodations, defined as something a person with a disability might need to complete a task. An American Sign Language interpreter might be an accommodation for a Deaf person. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. Companies are legally required to provide "reasonable" accommodations to candidates during the hiring process and once they are offered a job. <br/> <br/>
+						However, how could we ensure that whatever we built would successfully address these problems? Our team used further research to both create a framework for measurement and test whether or not we were achieveing the results we wanted. <br/> <br/>
 
 						                        </div>
                     </div>
@@ -71,24 +71,30 @@
 <!-- checklist boxes -->
 <div id="sub-section" class = "checklist">
  	<div class="row">
+ 		<h4> KEY EVALUATION METRICS </h4>
+ 	</div>
+
+ 	 	<div class="row">
+ 		Ultimately, our team decision to measure the success of our designs using the following criteria for each group. <br/><br/>
+
+ 		</div>
+ 		<div class="row">
+
          <div class="col-md-6 col-sm-12">
-         	Title<br/><br/>
-         	<input type="checkbox" name="vehicle1" value="Bike"> Understand<br>
-			<input type="checkbox" name="vehicle2" value="Car"> Evaluate <br>
-			<input type="checkbox" name="vehicle3" value="Boat" checked> Confidence<br>
+         	<b>Candidates with Disabilities</b><br/><br/>
+         	<input type="checkbox" checked> Understand <br/> Do I understand what is required for this stage of the interview? <br> <br/>
+			<input type="checkbox" checked> Evaluate <br/> Can I identify what I might need in terms of accommodation for this stage of the interview? <br> <br/>
+			<input type="checkbox" checked> Confidence <br/> Do I feel confident enough to request an accommodation? <br> <br/>
          </div>
 
          <div class="col-md-6 col-sm-12">
-         	Title<br/><br/>
-         	<input type="checkbox" name="vehicle1" value="Bike"> Understand<br>
-			<input type="checkbox" name="vehicle2" value="Car"> Evaluate <br>
-			<input type="checkbox" name="vehicle3" value="Boat" checked> Confidence<br>
+         	<b>Bloomberg Recruiting Coordinators</b><br/><br/>
+         	<input type="checkbox" checked> Efficiency <br/> How easy is it for me to implement this accommodation request? <br> <br/>
+			<input type="checkbox" checked> Confidence <br/> Do I have the information I need to handle this accommodation? <br> <br/> <br>
          </div>
 
     </div>
 </div>
-
-            <div id="subhead">
 	
 
 
@@ -96,22 +102,119 @@
      <div class="row">
          <div class="col-12">
             <div id="subhead">
-                    <h4> THE PROMPT </h4>
+                    <h4> SUCCESS FOR CANDIDATES WITH DISABILITIES </h4>
                     <div class="row">
-                        <div class="col-lg-3 col-sm-12">
-                        Bloomberg is a global, financial media and technology company, dedicated to creating the most inclusive work environment possible. In the Spring and Summer of 2018, they approached our team, to understand how they could make hiring and onboarding more inclusive for people with disabilities.
+                        <div class="col-lg-12 col-sm-12">
+                        The pain point emerged from our research, that candidates don't always know if they need to disclose their disability. In order to understand how we could address this, we conduct several co-design sessions with people with disabilities. In one of these sessions, a participant shared a mental model that has served us well for evaluating our prototype. They focus on the following steps when trying to understand if they should request an accommodation: 
                     </div>
+                </div>
 
-                        <div class="col-lg-8 col-sm-12">
-                        	<ul>
-                        		<li>19K Employees</li>
-                        		<li>192 Offices</li>
-                        		<li>325K Subscribers</li>
-                        		<li>$9Bn Revenue</li>
+			<div class='ui'>
+ 				<div class="row">
 
-                        		</ul>
 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Understand </span><br/>
+					        What is expected of me?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
                         </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Evaluate</span><br/>
+					        For what might I need an accommodation?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Request</span><br/>
+					        How can I easily ask for an accommodation?
+						</div>
+						</div>
+					</div>
+			       </div>
+			     </div>
+
+			     <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                        The p trying to understand if they should request an accommodation: 
+                    </div>
+                </div>
+
+			<div class='ui'>
+ 				<div class="row">
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+
+					  <div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Education </span><br/>
+					        What will you be asked to do at this interview?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+
+
+
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Evaluation</span><br/>
+					        What accommodations might you need based on this information?
+						</div>
+						</div>
+					</div>
+
+					  <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                        	<img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Placeholder image"/>
+                        </div>
+ 
+					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+					<div class='ui_box_2'>
+					    <div class='ui_box__inner2'>
+					        <span> Confidence</span><br/>
+					        How confident do you feel in requesting this accommodation?
+						</div>
+						</div>
+					</div>
+			       </div>
+			     </div>
+
+
+
+
+
+ 			</div>
+
 
 
 
@@ -128,137 +231,13 @@
 		     <div class="row">
    
 			<div class ="col-lg-12 col-sm12">
-		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"If your disability is obvious then no one wants to bring it up. It is a huge elephant in the room. The employer can't ask, but they are wondering if the person can do the job. Meanwhile, the person [with a disability] is scared to bring it up.
+		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"If your disability is obvious then no one wants to bring it up. It is a huge elephant in the room. The employer can't ask, but they are wondering if the person can do the job. Meanwhile, the person [with a disability] is scared to bring it up."
 "</div>
 		</div>
 	</div>
    	</div>
 
 
-<!-- section3 -->
-     <div class="row">
-         <div class="col-12">
-            <div id="subhead">
-                    <h4> TEAM </h4>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-12">
-						But asking for an accommodation can be easier said than done, even if you need something that will help you perform in the interview. 
-                        </div>
-                    </div>
-            </div>
-        </div>
-     </div>
-
-
-<!-- see-saw -->
-<div class="row" id ="sub-section">
-         <div class="col-md-5 col-sm-12">
-			  <div class="main">
-			    <div class="ball" id="ball1"> </div>
-			    <div class="ball" id="ball2"> </div>
-			    <div id="seesaw">
-			      <div id="pivot"></div>
-			      <div id="board"></div>
-			    </div>
-			  </div>
-			</div>
-
-         <div class="col-md-7 col-sm-12">
-         	<div class = "row"> This is a test </div>
-			  
-         	<div class = "row" id="balls"> 
-
-			         	<div class="ball-solid" id="ball3"> Visibility</div>
-						    <div class="ball-solid" id="ball4"> Necessity
-						</div>
-						<div class="ball-solid" id="ball5"> Trust
-						</div>
-						<div class="ball-solid" id="ball6"> Personality
-						</div>
-						<div class="ball-solid" id="ball8"> Age
-						</div>
-					</div>
-
-					 <div class="row" >
-        <div class="col-lg-12 col-sm-12">
-		    <div class="block animatable fadeInDown animationDelayMed" id="heading2">"I spent 30 minutes trying to decide if I should disclose my disability or not. Did I want to be in pain, or did I want to be seen as old?"</div>
-		</div>
-
-			</div>
-
-         	</div>
-         </div>
-
-		</div>
-
-
-<!-- section4 -->
-     <div class="row">
-         <div class="col-12">
-            <div id="subhead">
-                    <h4> TEAM </h4>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-12">
-                        Place holder text
-                        </div>
-                    </div>
-            </div>
-        </div>
-     </div>
-
-
-
-
-<!-- post it notes -->
-
-
-<div class="row" id ="sub-section">
-         <div class="col-md-3 col-sm-12">
-
-								  <div class=form>
-								    <div class=textAria>
-								      <b>Add Your Own Idea</b>
-								    </div>
-									</div>
-									</div>
-
-		<div class="col-md-3 col-sm-12">
-
-			
-								  <div class=form>
-								    <div class=textAria>
-								      <b>Add Your Own Idea</b>
-								    </div>
-									</div>
-					</div>
-
-
-<div class="col-md-3 col-sm-12">
-
-								  <div class=form>
-								    <div class=textAria>
-								      <b>Add Your Own Idea</b>
-								    </div>
-									</div>
-								
-					</div>
-
-					<div class="col-md-3 col-sm-12">
-
-
-								  <div class=form>
-								    <div contenteditable class=textAria>
-								      <b>Add Your Own Idea</b>
-								    </div>
-									</div>
-							
-					</div>
-
-
-			</div>
-
-
-		</div>
 
 
 
