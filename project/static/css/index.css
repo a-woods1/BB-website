@@ -1216,11 +1216,12 @@ body {
 
 body .ui {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 25px;
   font-family: 'Roboto', sans-serif;
   color: white;
   box-shadow: none;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 body .stat{
@@ -1966,7 +1967,50 @@ time {
   }
 }
 
-/* checklist */
-.checklist {
-  margin: auto;
+/*speech bubbles left hand*/
+.speech-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+  padding:25px;
+  margin:25px;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 46px solid transparent;
+  border-right-color: #00aabb;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -23px;
+  margin-left: -46px;
+}
+
+/*speech bubbles right hand*/
+.speech-bubble-2 {
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+  padding:25px;
+  margin:25px;
+}
+
+.speech-bubble-2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 46px solid transparent;
+  border-left-color: #00aabb;
+  border-right: 0;
+  border-bottom: 0;
+  margin-top: -23px;
+  margin-right: -46px;
 }
