@@ -44,18 +44,15 @@
      <div class="row">
          <div class="col-12">
             <div id="subhead">
-                    <h4> THE PROBLEM </h4>
+                    <h4> THE PRODUCT </h4>
                     <div class="row">
                         <div class="col-lg-12 col-sm-12" id="problem-text">
-                        This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
-                         <br/><br/>
 
+            ReadyGo is a web app with an interface for candidates, and an interface for Recruiting Coordinators. <br/><br/>
 
-            These "favors" aren't really favors though. They are  accommodations. <span> Accommodations can be anything a person with a disability might need to complete a task. </span> An American Sign Language interpreter might be an accommodation for a Deaf person during an in person meeting. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. <br/><br/>
+            The candidate side contains key information about the tasks, tool and environment involved with the current interview stage of the applicant. Candidates are also able to navigate 360 street-view style photospheres to get a sense of the environment if relevant. Finally, the candidate view includes a menu of accessibility accommodation options which candidates can open and select. <br/> <br/>
 
-            <span>The Americans with Disabilities Act requires companies to provide "reasonable" accommodations to candidates during the hiring process.</span> However, asking for an accommodation can be easier said than done, especially because candidates with disabilities feel it could open them up to bias during the hiring process. <br/> <br/>
-
-            This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
+            The Recruiting side contains step by step directions and controls for implementing accessibility accommodations. There is also space in the Recruiting side of the tool for communicating to candidates, Employee Relations and hiring teams. 
 
                                     </div>
                     </div>
@@ -164,15 +161,17 @@
                     <h4> ACCESSIBILITY </h4>
                     <div class="row">
                         <div class="col-md-6 col-sm-12" id="problem-text">
-                        This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
+                        One of key user segments are people with physical disabilities, so of course our app has to be digitally accessible.  
                          <br/><br/>
 
 
-            These "favors" aren't really favors though. They are  accommodations. <span> Accommodations can be anything a person with a disability might need to complete a task. </span> An American Sign Language interpreter might be an accommodation for a Deaf person during an in person meeting. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. <br/><br/>
+            For people with mobility impairments we have included keyboard navigation. Elements throughout the page can be traversed using the tab keys. <br/><br/>
 
-            <span>The Americans with Disabilities Act requires companies to provide "reasonable" accommodations to candidates during the hiring process.</span> However, asking for an accommodation can be easier said than done, especially because candidates with disabilities feel it could open them up to bias during the hiring process. <br/> <br/>
+            For people with visual impairments we have designed and structured the app so it can be read with a screen reader and included alternate content for any images featured within the prototype. <br/><br/>
 
-            This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
+            We've also considered other elements of web accessibility, using the IBM heuristics listed here: including ensuring appropriate color contrast and not relying solely on color as an indicator for our designs.
+
+            
 
                                     </div>
                       <div class="col-md-6 col-sm-12">
@@ -200,15 +199,16 @@
 
 
                         <div class="col-md-6 col-sm-12" id="problem-text">
-                        This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
+                        Errors in any system can be bad, but from our research errors can be especially be detrimental to a candidate's experience. Additionally, if a company can help a user recover from an error successfully that can actually build more trust.  
                          <br/><br/>
 
+                        Therefore we have built in two key error recovery systems:<br/><br/>
 
-            These "favors" aren't really favors though. They are  accommodations. <span> Accommodations can be anything a person with a disability might need to complete a task. </span> An American Sign Language interpreter might be an accommodation for a Deaf person during an in person meeting. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. <br/><br/>
+                        First, if a recruiter forgets to input any information, the candidate will still see basic information taken from the current email and PDF template.<br/><br/>
 
-            <span>The Americans with Disabilities Act requires companies to provide "reasonable" accommodations to candidates during the hiring process.</span> However, asking for an accommodation can be easier said than done, especially because candidates with disabilities feel it could open them up to bias during the hiring process. <br/> <br/>
+                        Second, if a recruiter forgets to respond to a request, then the request will automatically file messages or SDSK tickets once the candidate is 48 hours away from their interview.<br/><br/>
 
-            This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
+                        Last, if the candidate has any questions or isn't sure about something, they will always have an option in the interface to have a conversation about their needs with their recruiter.
 
                                     </div>
 
@@ -240,6 +240,39 @@
                        <img id="demo-pic" src="{{ url_for('static', filename='assets/images/UI.gif') }}" alt="Placeholder image"/>
                      </div>
 
+
+                    </div>
+            </div>
+        </div>
+     </div>
+
+
+
+     <!-- Immersive View -->
+     <div class="row">
+         <div class="col-12">
+            <div id="sub-section">
+                    <h4> Indoor Street View </h4>
+                    <div class="row">
+
+                       <div class="col-md-6 col-sm-12">
+                       <img id="demo-pic" src="{{ url_for('static', filename='assets/images/UI.gif') }}" alt="Placeholder image"/>
+                     </div>
+
+
+
+                        <div class="col-md-6 col-sm-12" id="problem-text">
+                        This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
+                         <br/><br/>
+
+
+            These "favors" aren't really favors though. They are  accommodations. <span> Accommodations can be anything a person with a disability might need to complete a task. </span> An American Sign Language interpreter might be an accommodation for a Deaf person during an in person meeting. A #2 pencil could be an accomodation for a person who has difficulty typing on a keyboard. <br/><br/>
+
+            <span>The Americans with Disabilities Act requires companies to provide "reasonable" accommodations to candidates during the hiring process.</span> However, asking for an accommodation can be easier said than done, especially because candidates with disabilities feel it could open them up to bias during the hiring process. <br/> <br/>
+
+            This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
+
+                                    </div>
 
                     </div>
             </div>
