@@ -16,10 +16,6 @@ $(document).on('click','.ball-solid',function(){
 
 
 
-
-
-
-
 // Trigger CSS animations on scroll.
 // Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
 
@@ -28,6 +24,28 @@ $(document).on('click','.ball-solid',function(){
 // --> Check https://codepen.io/bramus/pen/vKpjNP
 
 jQuery(function($) {
+
+  $('#email-submit-btn').on('click', function(){
+  console.log("test");
+  $('#responses').toggleClass('hidden');
+  });
+
+  $('.slider').on('change', function(){
+    console.log();
+
+    var valueOn = $("input[type=range]" ).val();
+    
+    if (valueOn >= 50){
+          console.log("Hey");
+    $('#rangevalue').text("Disclose");
+      } else {
+        $('#rangevalue').text("Don't Disclose")
+    }
+
+
+  });
+
+
   
   // Function which adds the 'animated' class to any '.animatable' in view
   var doAnimations = function() {
@@ -60,6 +78,5 @@ jQuery(function($) {
 $('.list-item').on('click', function() {
   $(this).toggleClass('is-checked');
 });
-
 
 

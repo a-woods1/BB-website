@@ -54,7 +54,7 @@
             <div id="subhead">
                     <h1> THE PROBLEM </h1>
                     <div class="row">
-                        <div class="col-lg-12 col-sm-12" id="problem-text">
+                        <div class="col-lg-6 col-sm-12" id="problem-text">
                             How do you ask a company for something, while trying to convince them to hire you? This is the dilemma some candidates with disabilities face. Imagine trying to convince a company to hire you, while simultaneously asking them for a favor. 
                          <br/><br/>
 
@@ -66,6 +66,17 @@
             This project is a look into the current hiring process for people with disabilities and <span>how to improve the experience of requesting an accommodation, so candidates with disabilities can thrive.</span> 
 
                                     </div>
+
+
+
+        <div class="col-lg-5 col-md-12" id ="ss-box">
+          <div class="see-saw-background">
+            <div class="ball" id="ball1"> </div>
+            <div class="ball" id="ball2"> </div>
+              <div id="pivot"></div>
+              <div id="board"></div>
+          </div>
+        </div>
                     </div>
             </div>
         </div>
@@ -226,7 +237,7 @@
             <h1> OUR RESEARCH </h1>
 
                         <div class="col-lg-12 col-sm-12">
-                          We started with the assumption that the hardest part for people with disabilities, was getting what they needed to excel. 
+                          We started with the assumption that the hardest part for people with disabilities, was getting what they needed to excel, in securing the accommodation. 
 
                         </div>
                     </div>
@@ -259,8 +270,6 @@
 
                   <span> Secure the right Accomodation</span><br/>
 
-                   <img id="bb-icons" src="{{ url_for('static', filename='assets/images/lightning-icon.png') }}" alt="A lightning bolt icon"/>
-
             </div>
             </div>
           </div>
@@ -290,63 +299,33 @@
 
          <div class="row">
                         <div class="col-lg-12 col-sm-12">
-                          However, based on our research, it we uncovered that the most difficult part of the current experience for people with disabilities was actually asking and disclosing their disability in the first place. 
+                          However, based on our research, we uncovered that the most difficult part of the current experience for people with disabilities was actually asking and disclosing their disability in the first place. Imagine that you have to email your recruiter to let them know during an interview. What would you say?
                         </div>
                     </div>
 
            <div class='ui'>
         <div class="row" id="pop-out-section">
-
-
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
-
-            <div class='ui_box_2'>
-              <div class='ui_box__inner2'>
-                  <span> Disclose Your Disability</span><br/>
-                   <img id="bb-icons" src="{{ url_for('static', filename='assets/images/lightning-icon.png') }}" alt="A lightning bolt icon"/>
-
+            
+            <div class="col-lg-6 col-sm-12">
+              
+                
+                <textarea class="form__input" id="inputMessage" rows="3" placeholder="How would you tell a recruiter about your disability?" name="message"></textarea><br/>
+                <button class="btn--default fill" id="email-submit-btn"> Send </button>
             </div>
+
+            <div id="responses" class="col-lg-6 col-sm-12 hidden">
+                            Test test test 
             </div>
-          </div>
-
-            <div class="col-lg-1 col-sm-1" id="icon-text">
-
-
-                          <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Then"/>
-                        </div>
 
 
 
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
-          <div class='ui_box_3'>
-              <div class='ui_box__inner2'>
-                  <span> Secure the right Accomodation</span>
-            </div>
-            </div>
-          </div>
-
-            <div class="col-lg-1 col-sm-1" id="icon-text">
-
-                          <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" alt="Then"/>
-                        </div>
- 
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
-          <div class='ui_box_3'>
-              <div class='ui_box__inner2'>
-                  <span> Perform in the Role</span>
+          
             </div>
             </div>
           </div>
 
         </div>
-      </div>
 
-    </div>
-
-
-
-
-    </div>
 
 
 
@@ -357,6 +336,9 @@
         
         <h1 id="hidden"> THE EXPERIENCE FOR PEOPLE WITH DISABILITIES </h1>
 
+
+
+
       <div class ="col-lg-12 col-sm12">
     <div class="block animatable fadeInDown animationDelay" id="heading2">"If your disability is obvious then no one wants to bring it up. It is a huge elephant in the room. The employer can't ask, but they are wondering if the person can do the job. Meanwhile, the person [with a disability] is scared to bring it up."</div>
     </div>
@@ -365,7 +347,52 @@
 
 
 
-<!-- see-saw -->
+<!-- mixers -->
+   <div class="row" id ="sub-section">      
+            <div class ="col-lg-4 col-sm12">
+              <div class="slider">
+              <input type = "range" min="0" max="100" onchange="rangevalue.value=value"/>
+              <output id="rangevalue">50</output>
+              </div>
+            </div>
+          </div>
+
+                      <div class ="col-lg-8 col-sm12"></div>
+
+
+
+            <div class ="col-lg-4 col-sm12">
+              <div class="slider">
+              <input type = "range" min="0" max="100" onchange="rangevalue2.value=value"/>
+              <output id="rangevalue2"></output>
+              </div>
+            </div>
+
+            <div class ="col-lg-4 col-sm12">
+              <div class="slider">
+              <input type = "range" min="0" max="100" onchange="rangevalue3.value=value"/>
+              <output id="rangevalue3">50</output>
+              </div>
+            </div>
+
+            <div class ="col-lg-4 col-sm12">
+              <div class="slider">
+              <input type = "range" min="0" max="100" onchange="rangevalue4.value=value"/>
+              <output id="rangevalue4">50</output>
+              </div>
+            </div>
+
+            <div class ="col-lg-4 col-sm12">
+              <div class="slider">
+              <input type = "range" min="0" max="100" onchange="rangevalue5.value=value"/>
+              <output id="rangevalue5">50</output>
+              </div>
+            </div>
+
+   </div>
+
+
+<!-- see-saw 
   <div class="row" id ="sub-section">
       <div class="col-lg-5 col-md-12" id ="ss-box">
         <div class="see-saw-background">
@@ -403,6 +430,8 @@
          </div>
 
     </div>
+
+    -->
 
 
 <!-- section4 -->
