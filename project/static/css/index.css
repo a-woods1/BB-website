@@ -100,15 +100,15 @@ body {
 
 h1 {
   font-size: 30px;
-  margin-bottom: 100px;
-  text-align: center;
+  text-align: left;
+  margin-bottom:30px;
   font-family: Roboto-Black;
   font-weight: bold;
 }
 h2 {
   font-size: 18px;
   font-family: Roboto-Regular;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 20px;
 }
 h3 {
@@ -197,19 +197,24 @@ h6 {
   font-weight: bold;
 }
 
+
 #team_first_row{
   background-color: #f7f7f7;
   padding-top:5%;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 5%;
+  margin-bottom:5%;
 }
+
 
 #team_photo{
   width: 660px;
   height: 380px;
-  position: relative;
-  top: -100px;
+  top: -50px;
 }
+
+
 
 .team_links {
   font-family: Roboto-Bold;
@@ -676,6 +681,18 @@ h6 {
     line-height: 1;
     white-space: nowrap;
   }
+
+  #team_photo{
+  height: 100%;
+  margin:auto;
+  padding:auto;
+  display:block;
+  }
+
+  #team_element{
+  margin:5%;
+  }
+
   #role {
     margin-left: 18px;
     font-size: 11px;
@@ -691,17 +708,17 @@ h6 {
     margin-top: 25px;
   }
   h1 {
-    font-size: 18px;
-    margin-bottom: 25px;
-    font-family: Roboto-Regular;
-    font-weight: bold;
-    /*text-transform: uppercase;*/
+  font-size: 30px;
+  text-align: left;
+  margin-bottom:30px;
+  font-family: Roboto-Black;
+  font-weight: bold;
   }
   h2 {
     font-size: 18px;
     font-family: Roboto-Bold;
-    font-weight: bold;
     margin-bottom: 20px;
+    font-weight: 900;
   }
   h3 {
     font-family: Roboto-Black;
@@ -813,6 +830,13 @@ h6 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
+
+  .team_member{
+  text-align: left;
+  font-weight: 900;
+  padding-top: 15px;
+}
+
   #card_text {
     margin: 10px auto auto 20px;
   }
@@ -885,12 +909,20 @@ h6 {
     line-height: 1;
     white-space: nowrap;
   }
+
+  #team_photo{
+    height: 100%;
+    margin:auto;
+    padding:auto;
+    display:block;
+  }
+
   h1 {
-    margin-bottom: 75px;
-    font-size: 20px;
-    line-height: 64px;
-    font-family: Roboto-Regular;
-    font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  margin-bottom:30px;
+  font-family: Roboto-Black;
+  font-weight: bold;
   }
   h2 {
     font-size: 18px;
@@ -1090,10 +1122,11 @@ h6 {
     /* Default is baseline, this fixes a common alignment issue */
   }
   h1 {
-    font-size: 25px;
-    line-height: 64px;
-    font-family: Roboto-Regular;
-    font-weight: bold;
+ font-size: 30px;
+  text-align: left;
+  margin-bottom:30px;
+  font-family: Roboto-Black;
+  font-weight: bold;
   }
   h2 {
     font-size: 18px;
