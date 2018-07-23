@@ -298,23 +298,24 @@
       </div>
 
          <div class="row">
-                        <div class="col-lg-12 col-sm-12">
-                          However, based on our research, we uncovered that the most difficult part of the current experience for people with disabilities was actually asking and disclosing their disability in the first place. Imagine that you have to email your recruiter to let them know during an interview. What would you say?
+                        <div class="col-lg-12 col-sm-12" id="problem-text">
+                          However, based on our research, we uncovered that the most difficult part of the current experience for people with disabilities was actually asking and disclosing their disability in the first place. <span>Imagine that you have to email your recruiter to let them know that you have a disability. But you don’t want it to affect your candidacy. What would you say?</span>
                         </div>
                     </div>
 
            <div class='ui'>
         <div class="row" id="pop-out-section">
             
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-12 col-sm-12">
               
                 
-                <textarea class="form__input" id="inputMessage" rows="3" placeholder="How would you tell a recruiter about your disability?" name="message"></textarea><br/>
+                <textarea class="form__input" id="inputMessage" rows="3" placeholder="What would you say..." name="message"></textarea><br/>
                 <button class="btn--default fill" id="email-submit-btn"> Send </button>
             </div>
 
-            <div id="responses" class="col-lg-6 col-sm-12 hidden">
-                            Test test test 
+            <div id="responses" class="col-lg-12 col-sm-12 hidden">
+            Thank you for your message. Someone will respond to your inquiry shortly. In the meantime please check our FAQ page. 
+
             </div>
 
 
@@ -340,7 +341,7 @@
 
 
       <div class ="col-lg-12 col-sm12">
-    <div class="block animatable fadeInDown animationDelay" id="heading2">"If your disability is obvious then no one wants to bring it up. It is a huge elephant in the room. The employer can't ask, but they are wondering if the person can do the job. Meanwhile, the person [with a disability] is scared to bring it up."</div>
+    <div class="block animatable fadeInDown animationDelay" id="heading2">"No matter what your disability is there are some things that are hard to explain. It is difficult to explain what you are capable of and what exact accommodations you need. It has been hard to say what I would need."</div>
     </div>
   </div>
     </div>
@@ -348,46 +349,73 @@
 
 
 <!-- mixers -->
-   <div class="row" id ="sub-section">      
+<div id="sub-section">
+  <div class ="row">
+    <div class="col-lg-12">
+      As part of our testing we realized that there are a variety of factors that go into the disclosure decision for people with disabilities. Imagine trying to balance the following factors to make your own disclosure decision:<br/>    <br/>      
+    </div>
+  </div>
+   <div class="row">      
+            <div class ="col-lg-2 col-sm12"> I do not trust this company<br/><br/> </div>
             <div class ="col-lg-4 col-sm12">
               <div class="slider">
-              <input type = "range" min="0" max="100" onchange="rangevalue.value=value"/>
-              <output id="rangevalue">50</output>
+              <input id= "range1" type = "range" min="0" max="100" onchange="rangevalue.value=value"/>
+              <output id="rangevalue">Undecided</output>
               </div>
             </div>
+            <div class ="col-lg-2 col-sm12"> I trust this company</div>
+
+            <div class ="col-lg-4 col-sm12">
+            Trust: If a person feels a certain level of trust in the company or employer, they may be more likely to disclose
           </div>
 
-                      <div class ="col-lg-8 col-sm12"></div>
 
+          </div>
 
-
+<div class="row">      
+            <div class ="col-lg-2 col-sm12"> I do not identify as a person with a disability <br/><br/> </div>
             <div class ="col-lg-4 col-sm12">
-              <div class="slider">
-              <input type = "range" min="0" max="100" onchange="rangevalue2.value=value"/>
-              <output id="rangevalue2"></output>
+              <div class="slider2">
+              <input id= "range2" type = "range" min="0" max="100" onchange="rangevalue2.value=value"/>
+              <output id="rangevalue2">Undecided</output>
               </div>
             </div>
+             <div class ="col-lg-2 col-sm12"> I identify as a person with a disability</div>
+          </div>
 
+
+  <div class="row">  
+              <div class ="col-lg-2 col-sm12"> My disability is recent <br/><br/></div>
             <div class ="col-lg-4 col-sm12">
-              <div class="slider">
-              <input type = "range" min="0" max="100" onchange="rangevalue3.value=value"/>
-              <output id="rangevalue3">50</output>
+              <div class="slider3">
+              <input id= "range3" type = "range" min="0" max="100" onchange="rangevalue3.value=value"/>
+              <output id="rangevalue3">Undecided</output>
               </div>
             </div>
+             <div class ="col-lg-2 col-sm12"> I have had my disability for a long time</div>
+          </div>
 
+<div class="row">
+            <div class ="col-lg-2 col-sm12"> My disability is not visible in this situation</div>      
             <div class ="col-lg-4 col-sm12">
-              <div class="slider">
-              <input type = "range" min="0" max="100" onchange="rangevalue4.value=value"/>
-              <output id="rangevalue4">50</output>
+              <div class="slider4">
+              <input id= "range4" type = "range" min="0" max="100" onchange="rangevalue4.value=value"/>
+              <output id="rangevalue4">Undecided</output>
               </div>
             </div>
+            <div class ="col-lg-2 col-sm12"> My disability will be visible in this situation</div>
+          </div>
 
+<div class="row">      
+              <div class ="col-lg-2 col-sm12"> I can do everything I need to on my own</div>
             <div class ="col-lg-4 col-sm12">
-              <div class="slider">
-              <input type = "range" min="0" max="100" onchange="rangevalue5.value=value"/>
-              <output id="rangevalue5">50</output>
+              <div class="slider5">
+              <input id= "range5" type = "range" min="0" max="100" onchange="rangevalue5.value=value"/>
+              <output id="rangevalue5">Undecided</output>
               </div>
             </div>
+           <div class ="col-lg-2 col-sm12"> I will need to do something that involves my disability</div>
+          </div>
 
    </div>
 

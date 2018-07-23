@@ -10,7 +10,7 @@ var affirmations = ["If a person's disability is visible to others, they may hav
 
 
 $(document).on('click','.ball-solid',function(){
-          var itemID = $(this).attr('id')
+        var itemID = $(this).attr('id')
         $(".empty-text").text(affirmations[itemID]);
     });
 
@@ -26,23 +26,63 @@ $(document).on('click','.ball-solid',function(){
 jQuery(function($) {
 
   $('#email-submit-btn').on('click', function(){
-  console.log("test");
-  $('#responses').toggleClass('hidden');
+    $('#responses').toggleClass('hidden');
+
   });
 
   $('.slider').on('change', function(){
-    console.log();
-
-    var valueOn = $("input[type=range]" ).val();
-    
+    var valueOn = $("#range1" ).val();    
     if (valueOn >= 50){
-          console.log("Hey");
     $('#rangevalue').text("Disclose");
       } else {
         $('#rangevalue').text("Don't Disclose")
     }
+  });
 
 
+  $('.slider2').on('change', function(){
+    var valueOn2 = $("#range2" ).val(); 
+    console.log(valueOn2);   
+    if (valueOn2 >= 50){
+          console.log("Hey");
+    $('#rangevalue2').text("Disclose");
+      } else {
+        $('#rangevalue2').text("Don't Disclose")
+    }
+  });
+
+
+  $('.slider3').on('change', function(){
+    var valueOn3 = $("#range3" ).val(); 
+    console.log(valueOn3);   
+    if (valueOn3 >= 50){
+          console.log("Hey");
+    $('#rangevalue3').text("Disclose");
+      } else {
+        $('#rangevalue3').text("Don't Disclose")
+    }
+  });
+
+  $('.slider4').on('change', function(){
+    var valueOn4 = $("#range4" ).val(); 
+    console.log(valueOn4);   
+    if (valueOn4 >= 50){
+          console.log("Hey");
+    $('#rangevalue4').text("Disclose");
+      } else {
+        $('#rangevalue4').text("Don't Disclose")
+    }
+  });
+
+  $('.slider5').on('change', function(){
+    var valueOn5 = $("#range5" ).val(); 
+    console.log(valueOn5);   
+    if (valueOn5 >= 50){
+          console.log("Hey");
+    $('#rangevalue5').text("Disclose");
+      } else {
+        $('#rangevalue5').text("Don't Disclose")
+    }
   });
 
 
@@ -75,8 +115,5 @@ jQuery(function($) {
 
 });
 
-$('.list-item').on('click', function() {
-  $(this).toggleClass('is-checked');
-});
 
 
