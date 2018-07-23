@@ -33,9 +33,11 @@ jQuery(function($) {
   $('.slider').on('change', function(){
     var valueOn = $("#range1" ).val();    
     if (valueOn >= 50){
-    $('#rangevalue').text("Disclose");
+    $('#rangevalue').text("Trust - Disclose");
+    $('#rangevalue').css("color", "green");
       } else {
-        $('#rangevalue').text("Don't Disclose")
+        $('#rangevalue').text("Trust - Don't Disclose")
+        $('#rangevalue').css("color", "red");
     }
   });
 
@@ -45,9 +47,12 @@ jQuery(function($) {
     console.log(valueOn2);   
     if (valueOn2 >= 50){
           console.log("Hey");
-    $('#rangevalue2').text("Disclose");
+    $('#rangevalue2').text("Identity - Disclose");
+    $('#rangevalue2').css("color", "green");
       } else {
-        $('#rangevalue2').text("Don't Disclose")
+        $('#rangevalue2').text("Identity - Don't Disclose")
+        $('#rangevalue2').css("color", "red");
+
     }
   });
 
@@ -56,10 +61,11 @@ jQuery(function($) {
     var valueOn3 = $("#range3" ).val(); 
     console.log(valueOn3);   
     if (valueOn3 >= 50){
-          console.log("Hey");
-    $('#rangevalue3').text("Disclose");
+    $('#rangevalue3').text("Age of disability - Disclose");
+    $('#rangevalue3').css("color", "green");
       } else {
-        $('#rangevalue3').text("Don't Disclose")
+        $('#rangevalue3').text("Age of disability - Don't Disclose")
+        $('#rangevalue3').css("color", "red");
     }
   });
 
@@ -67,10 +73,13 @@ jQuery(function($) {
     var valueOn4 = $("#range4" ).val(); 
     console.log(valueOn4);   
     if (valueOn4 >= 50){
-          console.log("Hey");
-    $('#rangevalue4').text("Disclose");
+    $('#rangevalue4').text("Visibility of disability - Disclose");
+    $('#rangevalue4').css("color", "green");
+
       } else {
-        $('#rangevalue4').text("Don't Disclose")
+        $('#rangevalue4').text("Visibility of disability - Don't Disclose")
+        $('#rangevalue4').css("color", "red");
+
     }
   });
 
@@ -78,10 +87,11 @@ jQuery(function($) {
     var valueOn5 = $("#range5" ).val(); 
     console.log(valueOn5);   
     if (valueOn5 >= 50){
-          console.log("Hey");
-    $('#rangevalue5').text("Disclose");
+    $('#rangevalue5').text("Necessity - Disclose");
+    $('#rangevalue5').css("color", "green");
       } else {
-        $('#rangevalue5').text("Don't Disclose")
+        $('#rangevalue5').text("Necessity - Don't Disclose");
+        $('#rangevalue5').css("color", "red");
     }
   });
 
