@@ -1765,6 +1765,9 @@ body .ui_box_3 {
   left: 15px;
   bottom:75px;
   z-index: 2;
+  color:white;
+  text-align: center;
+  padding-top:20px;
 }
 
 #ball2 {
@@ -1774,6 +1777,9 @@ body .ui_box_3 {
   left: 270px;
   bottom: 15px;
   z-index: 2;
+  color:white;
+  text-align: center;
+  padding-top:20px;
 }
 
 .empty-text{
@@ -2277,4 +2283,5 @@ textarea {
   padding-bottom:-10px;
   margin-bottom:-50px;
 }
+
 
