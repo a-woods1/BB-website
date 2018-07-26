@@ -2047,6 +2047,11 @@ padding:auto;
   outline: 0;
 }
 
+ul li{
+  list-style-type:none;
+}
+
+
 /* timeline */
 *,
 *::before,
@@ -2172,6 +2177,17 @@ time {
   }
 }
 
+/*stop animations*/
+#stop-animation-btn{
+  position:relative;
+  float:right;
+  width:100px;
+  color:white;
+  font-family:Roboto;
+  font-size:14px;
+  margin-left:50px;
+}
+
 /*speech bubbles left hand*/
 .speech-bubble {
   position: relative;
@@ -2284,4 +2300,12 @@ textarea {
   margin-bottom:-50px;
 }
 
+/*no animation property*/
+.paused {
+   -ms-animation-play-state:paused;
+   -o-animation-play-state:paused;
+   -moz-animation-play-state:paused;
+   -webkit-animation-play-state:paused;
+    animation-play-state: paused;
+}
 

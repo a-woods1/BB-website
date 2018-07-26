@@ -26,9 +26,33 @@ $(document).on('click','.ball-solid',function(){
 jQuery(function($) {
 
   $('#email-submit-btn').on('click', function(){
-    $('#responses').toggleClass('hidden');
+    /*$('#responses').toggleClass('hidden');*/
+    $('#responses').removeAttr("hidden")
+  });
+
+
+  $('#stop-animation-btn').on('click', function(){
+      $('#ball1').toggleClass('paused');
+      $('#ball2').toggleClass('paused');
+      $('#pivot').toggleClass('paused');
+      $('#board').toggleClass('paused');
+      $('.ui_box__inner2').toggleClass('fadeInDown');
+      $('.animatable').toggleClass('fadeInDown');
+
+      var currentText = $(this).text();
+
+      console.log(currentText);
+      if (currentText = "Pause Animations on this Page"){
+        $(this).text("Start Animations on this Page")
+      } 
+
+      if (currentText = "Start Animations on this Page"){
+        $(this).text("Start Animations on this Page")
+      } 
 
   });
+
+
 
   $('.slider').on('change', function(){
     var valueOn = $("#range1" ).val();    

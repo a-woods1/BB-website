@@ -52,6 +52,8 @@
      <div class="row">
          <div class="col-12">
             <div id="subhead">
+          <button class="btn--default fill" id="stop-animation-btn"> Pause Animations on this Page </button>
+
                     <h1> THE PROBLEM </h1>
                     <div class="row">
                         <div class="col-lg-6 col-sm-12" id="problem-text">
@@ -69,14 +71,15 @@
 
 
 
-        <div class="col-lg-5 col-md-12" id ="ss-box">
+        <div class="col-lg-4 col-md-12" id ="ss-box">
           <div class="see-saw-background">
-            <div class="ball" id="ball1" role="presentation"> I don't want to ask </div>
-            <div class="ball" id="ball2" role="presentation"> I really need this </div>
+            <div class="ball" id="ball1" role="presentation" aria-hidden="true"> I don't want to ask </div>
+            <div class="ball" id="ball2" role="presentation" aria-hidden="true"> I really need this </div>
               <div id="pivot"></div>
               <div id="board"></div>
           </div>
         </div>
+
                     </div>
             </div>
         </div>
@@ -246,10 +249,10 @@
         <div class="row" id="pop-out-section">
 
 
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
+          <div class="col-lg-3 col-sm-3">
 
             <div class='ui_box_3'>
-              <div class='ui_box__inner2'>
+              <div class='ui_box__inner2 animatable fadeInDown animationDelay'>
 
                   <span>Disclose Your Disability</span>
             </div>
@@ -264,9 +267,9 @@
 
 
 
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
+          <div class="col-lg-3 col-sm-3">
           <div class='ui_box_2'>
-              <div class='ui_box__inner2'>
+              <div class='ui_box__inner2 animatable fadeInDown animationDelayMed'>
 
                   <span> Secure the right Accomodation</span><br/>
 
@@ -283,9 +286,9 @@
 
 
 
-          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+          <div class="col-lg-3 col-sm-3">
           <div class='ui_box_3'>
-              <div class='ui_box__inner2'>
+              <div class='ui_box__inner2 animatable fadeInDown animationDelayLong'>
 
                   <span>Perform in the Role</span>
             </div>
@@ -313,7 +316,7 @@
                 <button class="btn--default fill" id="email-submit-btn"> Send </button>
             </div>
 
-            <div id="responses" class="col-lg-12 col-sm-12 hidden">
+            <div id="responses" class="col-lg-12 col-sm-12" hidden>
             Thank you for your message. Someone will respond to your inquiry shortly. In the meantime please check our FAQ page. 
 
             </div>
@@ -367,12 +370,14 @@
 
                   <div class=form-note>
                     <div class=textAria>
-                      <b>A mentoring platform</b><br/>
-                      <b>A virtual assistant</b><br/>
-                      <b>A transferrable profile</b><br/>
-                      <b>A disclosure calculator</b><br/>
-                  <b>An anonymous forum</b><br/>
-                  <b>A cooperative game</b><br/>
+                      <ul>
+                        <li><b>A mentoring platform</b><br/></li>
+                         <li><b>A virtual assistant</b><br/></li>
+                          <li><b>A transferrable profile</b><br/></li>
+                          <li><b>A disclosure calculator</b><br/></li>
+                          <li><b>An anonymous forum</b><br/></li>
+                          <li><b>A cooperative game</b><br/></li>
+                      </ul>
                     </div>
                 </div>
               </div>
@@ -381,9 +386,11 @@
 
                   <div class=form-note>
                     <div class=textAria>
-                      <b>A VR storytelling experience</b><br/>
-                      <b>A dashboard of disclosure information</b><br/>
-                      <b>A company accessibility review site</b><br/>
+                      <ul>
+                        <li><b>A VR storytelling experience</b><br/></li>
+                         <li><b>A dashboard of disclosure information</b><br/></li>
+                          <li><b>A company accessibility review site</b><br/></li>
+                      </ul>
                     </div>
                 </div>
               </div>
