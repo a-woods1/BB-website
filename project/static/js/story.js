@@ -32,23 +32,22 @@ jQuery(function($) {
 
 
   $('#stop-animation-btn').on('click', function(){
+      var currentText = $('#stop-animation-btn').text();
+  
+      console.log(currentText);
+      if (currentText == "Pause Animations on this Page"){
+        $(this).text("Start Animations on this Page")
+      } else {
+        $(this).text("Pause Animations on this Page")
+      }
+
+
       $('#ball1').toggleClass('paused');
       $('#ball2').toggleClass('paused');
       $('#pivot').toggleClass('paused');
       $('#board').toggleClass('paused');
       $('.ui_box__inner2').toggleClass('fadeInDown');
-      $('.animatable').toggleClass('fadeInDown');
-
-      var currentText = $(this).text();
-
-      console.log(currentText);
-      if (currentText = "Pause Animations on this Page"){
-        $(this).text("Start Animations on this Page")
-      } 
-
-      if (currentText = "Start Animations on this Page"){
-        $(this).text("Start Animations on this Page")
-      } 
+      $('.animatable').toggleClass('fadeInDown'); 
 
   });
 
