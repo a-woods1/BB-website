@@ -81,13 +81,14 @@
          	<b>Candidates with Disabilities</b><br/><br/>
          	<input type="checkbox" checked> Understand <br/> Do I understand what is required for this stage of the interview? <br> <br/>
 			<input type="checkbox" checked> Evaluate <br/> Can I identify what I might need in terms of accommodation for this stage of the interview? <br> <br/>
-			<input type="checkbox" checked> Request <br/> Do I feel confident about requesting an accommodation? <br> <br/>
+			<input type="checkbox" checked> Act <br/> Do I feel confident about requesting an accommodation? <br> <br/>
          </div>
 
          <div class="col-md-6 col-sm-12">
          	<b>Recruiting Coordinators</b><br/><br/>
-         	<input type="checkbox" checked> Efficiency <br/> How easy is it for me to implement this accommodation request? <br> <br/>
-			<input type="checkbox" checked> Confidence <br/> Do I have everything  I need to handle this accommodation? <br> <br/> <br>
+         	<input type="checkbox" checked> Understand <br/> Do I understand what this candidate needs? <br> <br/>
+      <input type="checkbox" checked> Evaluate <br/> What do I have the power to do to implement this request? <br> <br/>
+      <input type="checkbox" checked> Act <br/> Can I easily implement this request? <br> <br/>
          </div>
 
     </div>
@@ -145,7 +146,7 @@
 					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
 					<div class='ui_box_2'>
 					    <div class='ui_box__inner2'>
-					        <span> Request</span><br/>
+					        <span> Act</span><br/>
 					        How do I ask for an accommodation?
 						</div>
 						</div>
@@ -168,7 +169,13 @@
 					  <div class='ui_box_2'>
 					    <div class='ui_box__inner2'>
 					        <span> Understand </span><br/>
-					        What will you be asked to do at this interview?
+					        Do I understand what is required for this stage of the interview?<br/><br/>
+
+                  <b>Current Email and PDF</b><br/>
+                  0/10 could identify at least three pieces of information about the tasks, tools and environment for their upcoming interview<br/><br/>
+
+                 <b>B READY:</b><br/>8/10 participants could identify at least three pieces of information about the tasks, tools and environment for their upcoming interview 
+
 						</div>
 						</div>
 					</div>
@@ -185,7 +192,13 @@
 					<div class='ui_box_2'>
 					    <div class='ui_box__inner2'>
 					        <span> Evaluate</span><br/>
-					        What accommodations might you need based on this information?
+					        Can I identify what I might need in terms of accommodation for this stage of the interview?<br/><br/>
+
+                  <b>Current Resources</b><br/>
+                  Using narrated videos, static images and floorplans helped some participants identify issues with physical space.<br/><br/>
+
+                 <b>B READY:</b><br/> However, 360 Photos like the kind in B READY helped candidates point out the most potential accommodations they might need.
+
 						</div>
 						</div>
 					</div>
@@ -198,8 +211,13 @@
 					<div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
 					<div class='ui_box_2'>
 					    <div class='ui_box__inner2'>
-					        <span> Request</span><br/>
-					        How confident do you feel in requesting this accommodation?
+					        <span> Act</span><br/>
+					        Do I feel confident about requesting an accommodation?<br/><br/>
+
+                  <b>Current Email</b><br/>
+                  1/6 participants felt confident requesting an accommodation via email, and it took them an average of 15 minutes.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY 5/6 participants felt confident requesting an accommodation, which took only five minutes.
 						</div>
 						</div>
 					</div>
@@ -277,7 +295,7 @@
 		     <div class="row">
    
 			<div class ="col-lg-12 col-sm12">
-		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"This would be such a cool tool to have in a job interview. I am always so hesitant to ask for things but this makes me feel way more confident. It would be so nice to have a company say, we get it, there are things that you need and we are okay with providing them. Emailing is something I have always had to do and it is very stressful for me." - Participant </div>
+		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"This would be such a cool tool to have in a job interview. I am always so hesitant to ask for things but this makes me feel way more confident. It would be so nice to have a company say, we get it, there are things that you need and we are okay with providing them. Emailing is something I have always had to do and it is very stressful for me." - Cassie, Wheelchair User </div>
 		</div>
 	</div>
 </div>
@@ -295,33 +313,65 @@
                 </div>
 
 
-
                 <div class='ui'>
         <div class="row">
 
-          <div class="col-lg-2 col-sm-12"></div>
+
           <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelay">
 
             <div class='ui_box_2'>
               <div class='ui_box__inner2'>
-                  <span> Efficiency </span><br/>
-                  How easy is it to implement an accommodation using this tool?
+                  <span> Understand </span><br/>
+                  Do I understand what this candidate needs? <br/><br/>
+
+                  <b>Current State</b><br/>
+                  Coordinators frequently find out about accommodations needed in person right when the candidate needs them<br/><br/>
+
+                 <b>B READY:</b><br/> By creating confidence for candidates, we anticipate that B READY will give recruiters a much improved buffer time in order to process an accommodation request.
             </div>
             </div>
           </div>
 
-            <div class="col-lg-1 col-sm-1"> </div>
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+
+
+                          <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+                        </div>
+
+
 
           <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
           <div class='ui_box_2'>
               <div class='ui_box__inner2'>
-                  <span> Confidence</span><br/>
-                  How confident are you that you've done everything you need to make the candidate's interview go smoothly?
+                  <span> Evaluate</span><br/>
+                  What do I have the power to do to implement this request? <br/><br/>
+
+                  <b>Current State</b><br/>
+                  Coordinators either send 100% of requests to Employee Relations or deal with 100% of them by themselves, depending on their seniority and/or how familiar they are with accessibility.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY 8/10 coordinators felt confident they had handled the accommodation request correctly, and 10/10 could identify which accommodations required HR review.
             </div>
             </div>
           </div>
-          <div class="col-lg-2 col-sm-12"></div>
 
+            <div class="col-lg-1 col-sm-1" id="icon-text">
+
+                          <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+                        </div>
+ 
+          <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
+          <div class='ui_box_2'>
+              <div class='ui_box__inner2'>
+                  <span> Act</span><br/>
+                  Can I easily implement this request?<br/><br/>
+
+                  <b>Current Resources</b><br/>
+                  Using in person coordination, Email, Spreadsheets and without any protocol it can take a recruiting coordinator 24 steps and 140 minutes to handle three accommodations.<br/><br/>
+
+                 <b>B READY:</b><br/> With B READY it takes 8 steps and 7 minutes to handle those same three accommodations.
+            </div>
+            </div>
+          </div>
              </div>
            </div>
 
@@ -385,7 +435,7 @@
 		     <div class="row">
    
 			<div class ="col-lg-12 col-sm12">
-		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"Everything is pretty straightforward - it's really easy to use, and I think it has everything I need. I don't feel like there's anything else I would need to do, everything is right here." - Recruiting Coordinator </div>
+		<div class="block animatable fadeInDown animationDelayMed" id="heading2">"“I would definitely recommend this tool to other coordinators! This will help us to be proactive rather than being reactive. I wish I had known about this earlier." - Recruiting Coordinator </div>
 		</div>
 	</div>
 </div>
