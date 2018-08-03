@@ -334,7 +334,6 @@ h6 {
 }
 
 .all_posts{
-<<<<<<< HEAD
   font-size: 20px;
 }
 
@@ -391,8 +390,8 @@ h6 {
 }
 
 .blog_photo{
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio_image {
