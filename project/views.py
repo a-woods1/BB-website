@@ -55,6 +55,10 @@ def blog_week_7():
 def blog_week_8():
     return render_template('blog_entries/week_8.html')
 
+@app.route('/blog/week_9')
+def blog_week_9():
+    return render_template('blog_entries/week_9.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
