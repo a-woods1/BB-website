@@ -37,10 +37,10 @@
       </div>
     </div>
     <!-- section1 -->
-    <section id="problem" class="dots">
+    <section id="problem">
       <div class="row">
         <div class="col-sm-12">
-          <div class="subhead">
+          <div class="subhead dots">
             <div class="col-lg-12" id ="ss-box">
               <div class="see-saw-background">
                 <div class="ball" id="ball1" role="presentation" aria-hidden="true"><span>I don't want to ask</span></div>
@@ -146,35 +146,38 @@
       <div class="row">
         <div class="col-12">
           <div class="subhead">
-            <h1> THE CLIENT </h1>
             <div class="row">
-              <div class="col-lg-3 col-sm-12">
-                Enter Bloomberg, a global, financial media and technology company, dedicated to creating the most inclusive work environment possible. In the Spring and Summer of 2018, they approached our team, to understand how they could make hiring and onboarding as inclusive as possible for people with disabilities.
+              <div class="col-lg-5 col-sm-12 flyout">
+                <h1>THE CLIENT</h1>
+                <p><span class="lede">Bloomberg is a global financial media and technology company.</span>Bloomberg is dedicated to creating the most inclusive work environment possible. In the Spring and Summer of 2018, they approached our team, to understand how they could make hiring and onboarding as inclusive as possible for people with disabilities.
+                </p>
               </div>
-              <div class="col-lg-1 col-sm-12">
+              <div class="client-icons col-lg-5 col-sm-12">
+              <div class="client-icon">
+                <span class="corner"></span>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/employeesicon.png') }}" role="presentation"/>
+                <span class="num">19,000</span>
+                <span class="label"> Employees</span>
               </div>
-              <div class="col-lg-1 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/employeesicon.png') }}" role="presentation"/><br/>
-                19,000 Employees
+              <div class="client-icon">
+                <span class="corner"></span>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/officeicon.png') }}" role="presentation"/>
+                <span class="num">176</span>
+                <span class="label">Locations</span>
               </div>
-              <div class="col-lg-1 col-sm-12">
+              <div class="client-icon">
+                <span class="corner"></span>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/computericon.png') }}" role="presentation"/>
+                <span class="num">5,000</span>
+                <span class="label">Daily Stories</span>
               </div>
-              <div class="col-lg-1 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/officeicon.png') }}" role="presentation"/><br/>
-                176 Locations
+              <div class="client-icon">
+                <span class="corner"></span>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/revenueicon.png') }}" role="presentation"/>
+                <span class="num">325,000+</span>
+                <span class="label">Customers</span>
               </div>
-              <div class="col-lg-1 col-sm-12">
-              </div>
-              <div class="col-lg-1 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/computericon.png') }}" role="presentation"/><br/>
-                5,000 Daily Stories
-              </div>
-              <div class="col-lg-1 col-sm-12">
-              </div>
-              <div class="col-lg-1 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/revenueicon.png') }}" role="presentation"/><br/>
-                325,000+ Customers
-              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -184,60 +187,61 @@
     <!-- determining the problem -->
     <section id="research">
       <div id="sub-section">
+        <h1> OUR RESEARCH </h1>
         <div class="row">
-          <h1> OUR RESEARCH </h1>
-          <div class="col-lg-12 col-sm-12">
-            We started with the assumption that the hardest part for people with disabilities was in securing the accommodations they need. 
+          <div class="col-lg-5 col-sm-12">
+            <p><span class="lede">We started with the assumption that the hardest part for people with disabilities was in securing the accommodations they need. 
+            </span>
+            </p>
           </div>
         </div>
         <div class='ui'>
           <div class="row" id="pop-out-section">
             <div class="col-lg-3 col-sm-3">
-              <div class='ui_box_3'>
-                <div class='ui_box__inner2 animatable fadeInDown animationDelay'>
+              <div class='ui_box animatable fadeInDown animationDelay'>
                   <span>Disclose Your Disability</span>
-                </div>
               </div>
             </div>
             <div class="col-lg-1 col-sm-1" id="icon-text">
-              <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+              <img class="tri-icons" src="{{ url_for('static', filename='assets/images/arrows-yellow.png') }}" role="presentation"/>
             </div>
             <div class="col-lg-3 col-sm-3">
-              <div class='ui_box_2'>
-                <div class='ui_box__inner2 animatable fadeInDown animationDelayMed'>
+              <div class='ui_box animatable fadeInDown animationDelayMed'>
                   <span> Secure the right Accomodation</span><br/>
-                </div>
               </div>
             </div>
             <div class="col-lg-1 col-sm-1" id="icon-text">
-              <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+              <img class="tri-icons" src="{{ url_for('static', filename='assets/images/arrows-yellow.png') }}" role="presentation"/>
             </div>
             <div class="col-lg-3 col-sm-3">
-              <div class='ui_box_3'>
-                <div class='ui_box__inner2 animatable fadeInDown animationDelayLong'>
+              <div class='ui_box animatable fadeInDown animationDelayLong'>
                   <span>Perform in the Role</span>
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 col-sm-12" id="problem-text">
-            However, based on our research, we uncovered that the most difficult part of the current experience for people with disabilities was actually asking for an accommodation, disclosing their disability in the first place. <span>Imagine that you have to email your recruiter to let them know that you have a disability. But you don’t want it to affect your candidacy. What would you say?</span>
-          </div>
-        </div>
-        <div class='ui'>
-          <div class="row" id="pop-out-section">
-            <div class="col-lg-12 col-sm-12">
-              <textarea class="form__input" id="inputMessage" rows="3" placeholder="What would you say..." name="message"></textarea><br/>
-              <button class="btn--default fill" id="email-submit-btn"> Send </button>
-            </div>
-            <div id="responses" class="col-lg-12 col-sm-12" hidden>
-              Thank you for your message. Someone will respond to your inquiry shortly. In the meantime please check our FAQ page. 
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="email">
+      <div id="sub-section">
+        <h1>INSIGHT</h1>
+        <div class="row">
+          <div class="col-sm-12 col-lg-5">
+            <p>However, based on our research, we uncovered that the most difficult part of the current experience for people with disabilities was actually asking for an accommodation, disclosing their disability in the first place.</p>
+            <p><span class="lede">Imagine that you have to email your recruiter to let them know that you have a disability. But you don’t want it to affect your candidacy. What would you say?</span></p>
+          </div>
+          <div class="col-sm-12 col-lg-1"></div>
+          <div class="col-sm-12 col-lg-6" id="type-email">
+              <div id="email-mockup">
+              <textarea class="form__input" id="inputMessage" rows="3" placeholder="What would you say..." name="message"></textarea>
+              <button class="btn--default fill" id="email-submit-btn">Send </button>
+            </div>
+            <div id="responses" class="col-lg-12 col-sm-12" hidden>
+              Thank you for your message. Someone will respond to your inquiry shortly. In the meantime please check our FAQ page.<br/>– Your Recruiter
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- quote -->
@@ -391,7 +395,7 @@
                     </div>
                   </div>
                   <div class="col-lg-1 col-sm-1" id="icon-text">
-                    <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+                    <img class="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
                   </div>
                   <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayMed">
                     <div class='ui_box_2'>
@@ -402,7 +406,7 @@
                     </div>
                   </div>
                   <div class="col-lg-1 col-sm-1" id="icon-text">
-                    <img id="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
+                    <img class="bb-icons" src="{{ url_for('static', filename='assets/images/rightarrow.png') }}" role="presentation"/>
                   </div>
                   <div class="col-lg-3 col-sm-3 animatable fadeInDown animationDelayLong">
                     <div class='ui_box_2'>
@@ -444,19 +448,19 @@
             </div>
             <div class="row">
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/talent-icon.png') }}" role="presentation"/><br/>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/talent-icon.png') }}" role="presentation"/><br/>
                 Talent <br/><br/> More candidates, both with and without disabilities, can be attracted
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/innovation-icon.png') }}" role="presentation"/><br/>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/innovation-icon.png') }}" role="presentation"/><br/>
                 Innovation <br/><br/> A more diverse workforce leads to an even more innovative company
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/brand-icon.png') }}" role="presentation"/><br/>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/brand-icon.png') }}" role="presentation"/><br/>
                 Brand <br/><br/> Continue to grow a reputation as an inclusive place to work and interview
               </div>
               <div class="col-lg-3 col-sm-12" id="icon-text">
-                <img id="bb-icons" src="{{ url_for('static', filename='assets/images/partnership-icon.png') }}" role="presentation"/><br/>
+                <img class="bb-icons" src="{{ url_for('static', filename='assets/images/partnership-icon.png') }}" role="presentation"/><br/>
                 Partnerships <br/><br/> Learnings from this tool can be used to enhance relationships with clients and partners with disabilities
               </div>
             </div>
