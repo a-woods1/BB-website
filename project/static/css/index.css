@@ -1616,6 +1616,16 @@ img.tri-icons {
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+
+  img.tri-icons {
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+}
+
 /* PROBLEM - QUOTE 1 */
 
 section#quote-1 {
@@ -1835,6 +1845,69 @@ section#calculator .disclose-true {
 
 }
 
+/* PROBLEM - MODEL */
+
+section#model span.lede {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+section#model h1:after {
+  background-image: url('../assets/images/arrows-yellow.png');
+}
+
+
+section#model .ui_box span.corner {
+  display: block;
+  position: absolute;
+  right: -10px;
+  left: auto;  
+  top: 0;
+  margin: 0;
+  transform: none;
+  transform: rotateZ(45deg);
+}
+
+section#model .ui_box {
+  display: block;
+  text-align: left;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6F6F6F;
+  text-align: left;
+  background-color: #ffffff;
+  max-height: 156px;
+  padding-left: 24px;
+  padding-top: 32px;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.11);
+  box-sizing: border-box;  
+  transition: all 200ms linear;  
+}
+
+section#model .ui_box:hover {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.20);
+  transition: all 200ms linear;
+}
+
+section#model .ui_box:before {
+  content:' ';
+}
+
+section#model .ui_box span {
+  font-family: Roboto-Black;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+section#model p {
+  color: #6A6A6A;
+  font-size: 16px;  
+}
 
 
 body .ui_box__inner .progress {
@@ -2141,10 +2214,10 @@ body .ui_box_3 {
   transform: scale(2);
 }
 
-.client-icon .corner {
+.corner {
   display: block;
   position: absolute;
-  top: 0;
+  top: 6px;
   left: 50%;
   width: 0; 
   height: 0; 
