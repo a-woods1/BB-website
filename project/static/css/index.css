@@ -1656,6 +1656,51 @@ section#quote-1 .subhead-dark {
   height: 100%;
 }
 
+/* PROBLEM - GOAL */
+
+section#goal {
+  min-height: 100vh;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+section#goal h1 {
+  color: #FCBC00;
+}
+
+section#goal h1:after {
+  background-image: url('../assets/images/arrows-white.png');
+}
+
+section#goal p {
+  font-size: 16px;
+}
+
+section#goal .form-note {
+  position: relative;
+  width: 100%;
+}
+
+section#goal ul {
+  width: 100%;
+}
+
+section#goal li {
+  float: left;
+  display: block;
+  margin: 8px;
+  width: 160px;
+  height: 160px;
+  padding: 16px;
+  font-family: Roboto-Bold;
+  color: #000000;
+  background-color: #FFFC9C;
+}
+
+section#goal li.custom {
+  border: solid 1px #000000;
+  box-shadow: 5px 5px 0px -1px #FFFC9C, 5px 5px 0px 0px #000000;  
+}
 
 body .ui_box__inner .progress {
   width: 100%;
@@ -2342,21 +2387,21 @@ margin-bottom:50px;
 /* post it notes */
 
 .form-note{
-  margin:auto;
+/*  margin:auto;
   margin-top: 5%;
   margin-bottom: 2%;
   width:200px;
   height:160px;
-  background-color:#7eb1ff;
+  background-color:#7eb1ff;*/
 }
 .textAria{
-  border-color:red;
+/*  border-color:red;
   width:180px;
   height:140px;
   position:absolute;
   margin:10px;
   font-family: 'Lato', sans-serif;
-  overflow:hide;
+  overflow:hide;*/
 }
 .textAria:focus{
   outline: 0;
