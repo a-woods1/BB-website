@@ -642,6 +642,27 @@ section#blog_posts ul li#blog-1 .thumbnail {
   padding: 64px;
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+
+  #blog_footer h1 {
+    text-align: left !important;
+    font-size: 32px;
+  }
+
+  #blog_footer > div {
+    padding: 0;
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+  } 
+
+.blog_entry #blog_footer a.all_posts {
+  
+  width: 100% !important;
+}  
+
+}
+
 #blog_footer h1 {
   text-align: right;
   font-size: 56px;
