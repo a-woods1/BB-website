@@ -1872,7 +1872,6 @@ section#client p {
   z-index: auto;  
 }
 
-
 .lede {
   display: block;
   font-family: Roboto-Black;
@@ -2231,18 +2230,20 @@ section#model h1:after {
 }
 
 
-section#model .ui_box span.corner {
+section#model .ui_box span.corner,
+section#eval-success-candidates .ui_box span.corner {
   display: block;
   position: absolute;
-  right: -10px;
-  left: auto;  
-  top: 0;
-  margin: 0;
-  transform: none;
-  transform: rotateZ(45deg);
+  left: auto;
+  right: -4px;
+  transform: rotate(45deg);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #FCBC00;
 }
 
-section#model .ui_box {
+section#model .ui_box,
+section#eval-success-candidates .ui_box {
   display: block;
   text-align: left;
   font-family: Roboto-Regular;
@@ -2259,7 +2260,8 @@ section#model .ui_box {
   transition: all 200ms linear;  
 }
 
-section#model .ui_box:hover {
+section#model .ui_box:hover,
+section#eval-success-candidates .ui_box:hover {
   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.20);
   transition: all 200ms linear;
 }
@@ -2268,7 +2270,8 @@ section#model .ui_box:before {
   content:' ';
 }
 
-section#model .ui_box span {
+section#model .ui_box span,
+section#eval-success-candidates .ui_box span {
   font-family: Roboto-Black;
   display: block;
   text-align: left;
@@ -2341,6 +2344,10 @@ section#opportunity .item span {
   background-color: transparent;
 }
 
+#evaluation img.bb-icons {
+  
+}
+
 /* EVALUATION - OVERVIEW */
 
 #evaluation #eval-overview {
@@ -2355,13 +2362,90 @@ section#opportunity .item span {
 
 /* EVALUATION - CHECKLIST */
 
-#evaluation #eval-checklist {
-  background-color: #FCBC00;
+#evaluation section#eval-checklist {
+  /*background-color: #FCBC00;*/
+  background-color: #FFFFFF;
 }
+
+section#eval-checklist ul li span.corner {
+  left: auto;
+  top: auto;
+  right: -1px;
+  transform: rotate(45deg);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #FCBC00; 
+}
+
+section#eval-checklist ul li {
+  display: block;
+  text-align: left;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6F6F6F;
+  text-align: left;
+  min-height: 170px;
+  padding-left: 24px;
+  padding-right: 24px;  
+  padding-top: 32px;
+  padding-bottom: 32px;  
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.11);
+  box-sizing: border-box;  
+  transition: all 200ms linear;  
+  position: relative;
+  margin-bottom: 16px;
+}
+
+section#eval-checklist .candidate ul li {
+  background-color: #ffffff;
+}
+
+section#eval-checklist .recruiting ul li {
+  background-color: #171717;
+}
+
+#evaluation #eval-checklist h3 {
+  font-size: 20px;
+  margin-bottom: 48px;
+  border-bottom: 4px #fcbc00 solid;   
+  text-transform: none;
+}
+
+section#eval-checklist .recruiting ul li h4 {
+  color: #FFFFFF;
+}
+
+section#eval-checklist .recruiting ul li p {
+  color: #fcbc00;
+}
+
+section#eval-checklist ul li:hover {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.20);
+  transition: all 200ms linear;
+}
+
+section#eval-checklist ul li h4 {
+  font-family: Roboto-Black;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+section#eval-checklist p {
+  color: #6A6A6A;
+  font-size: 16px;
+  padding-right: 64px;
+}
+
 
 #evaluation #eval-checklist .lede {
   font-size: 20px;
   line-height: 24px;
+  margin-bottom: 72px;
 }
 
 #evaluation #eval-checklist .candidate {
@@ -2375,40 +2459,15 @@ section#opportunity .item span {
   color: #ffffff;
 }
 
-#evaluation #eval-checklist h3 {
-  font-size: 20px;
-  margin-bottom: 48px;
-  border-bottom: 4px #fcbc00 solid;   
-  text-transform: none;
+/* EVALUATION - CHECKLIST */
+#evaluation section#eval-success-candidates {
+  padding-top: 72px;
+  background-color: #f7f7f7;
 }
 
-#evaluation #eval-checklist h4 {
-  font-size: 16px;  
-  margin-bottom: 8px;
+#evaluation section#eval-success-candidates #subhead {
+  background-color: #f7f7f7;
 }
-
-#evaluation #eval-checklist p {
-  margin-bottom: 32px;
-}
-
-#evaluation #eval-checklist li {
-  position: relative;
-  padding-left: 24px;
-}
-
-#evaluation #eval-checklist li:before {
-  content:' ';
-  width: 6px;
-  height: 6px;
-  transform: rotate(45deg);
-  background-color: #FCBC00;
-  position: absolute;
-  display: block;
-  top: 4px;
-  left: 0;
-}
-
-/* EVALUATION - SUCCESS-CANDIDATES */
 
 
 body .ui_box__inner .progress {
