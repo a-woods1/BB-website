@@ -1606,6 +1606,57 @@ img.tri-icons {
   transform: translateY(-50%);
 }
 
+/* PROBLEM - QUOTE 1 */
+
+section#quote-1 {
+  min-height: 80vh;
+  text-align: left;
+}
+
+section#quote-1 blockquote {
+  text-align: left;
+}
+
+section#quote-1 blockquote:before {
+  content: ' ';
+  display: block;
+  width: 263px;
+  height: 200px;
+  background-image: url('../assets/images/quote-marks.png');
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top:-50px;
+  left:-50px;
+  z-index:10;
+}
+
+
+section#quote-1 blockquote span {
+  display: block;
+  font-family: Roboto-Black;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 30px;
+  color: #FFFFFF; 
+}
+
+section#quote-1 span.cite {
+  display: block;
+  font-family: Roboto-Black;
+  font-size: 16px;
+  color: #FCBC00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+section#quote-1 .subhead-dark {
+  background-color: #282828;
+  text-align: left;
+  height: 100%;
+}
+
+
 body .ui_box__inner .progress {
   width: 100%;
   margin-top: 10px;
