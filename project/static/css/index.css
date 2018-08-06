@@ -987,9 +987,9 @@ h6 {
     line-height: .75;
   }
   p {
-    font-size: 12px;
+    font-size: 16px;
     margin-bottom: 30px;
-    line-height: 1.67;
+    line-height: 24px;
   }
 
   /* Portfolio */
@@ -1397,6 +1397,11 @@ section {
   position: relative;
 }
 
+section p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .dots:before {
   content: ' ';
   background-image: url('../assets/images/dark-dots.png');
@@ -1411,6 +1416,11 @@ section {
 }
 
 /* PROBLEM - PROBLEM*/
+
+section b {
+  display: inline;
+  border-bottom: 4px #fcbc00 solid;  
+}
 
 section#problem .subhead {
   background-color: #F7F7F7;
@@ -1720,6 +1730,18 @@ section#goal li.custom {
 
 section#calculator {
   background-color: #f7f7f7;
+}
+
+section#calculator .flyout {
+  margin-bottom: 40px; 
+}
+
+section#calculator .balancing p {
+  margin-top: 48px;
+}
+
+section#calculator .balancing span.lede {
+  margin-top: 24px;
 }
 
 section#calculator .slider-component {
