@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Team Blog - Week Five</title>
+  <title>Team Blog - Week 5</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.min.css') }}">
@@ -17,35 +17,33 @@
 
 </head>
 
-  <body id="main">
+  <body class="blog_entry" id="blog-5">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
 
-  <div id="page_title">
-    <div class="row">
-      <div class="col-1"></div>
-
-      <a class="all_posts" href="{{ url_for('blog') }}">< BACK TO ALL POSTS</a>
+    <div id="page_title">
+       <div class="container">
+          <div class="row">
+             <div class="col-sm-1"></div>
+             <div class="col-sm-10">
+                <a class="all_posts" href="{{ url_for('blog') }}">BACK TO ALL POSTS</a>
+                <div class="blog_week">WEEK 5</div>
+                <h1>Accelerating the Pace</h1>
+             </div>
+             <div class="col-sm-1"></div>
+          </div>
+       </div>
     </div>
-
-        <div class="row">
-                <div class="col-1"></div>
-
-          <div id="heading" class="col-7">Accelerating the Pace 
-           <div class="blog_week">WEEK 5</div>
-        </div>
-       <div class="col-6">
-</div>
-</div>
-  </div>
-
-
 
     <!-- Header -->
 
-    <div class="blog_container">
-    <!-- Portfolio -->
-    <div class="blog_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-0 col-md-1 pad"></div>
+
+    <!-- Content -->
+    <div class="blog_content col-sm-10 col-md-10">
+      <div class="publish_date">Jun 22, 2018</div>
       <h2>Once you identify your target, all that’s left to do is move toward it.</h2>
       <p>This week our team was able to do the following:</p>
       <p><b>Identify the target → Take three steps forward → Take one step back</b><p>
@@ -82,20 +80,20 @@
         <li>Building the things we know we'll need early on</li>
       </ol>
       <p>Part of this shift will also include experimenting with our meeting cadences and locations. Individual work time is easier said than done when you are sitting in a room with three teammates who may be discussing something else that you find interesting. We hope these changes will have us zooming closer to our target next week!</p><br/>
+        <div class="col-sm-0 col-md-1 pad"></div>
+      </div>
     </div><!-- End blog_page -->
   </div><!-- end blog_container -->
   <div id="blog_footer" class="row">
-    <div class="col-3">
-      <h1 class="team_member">Up<br/>Next</h1>
+    <div class="col-sm-3">
+      <h1>Up<br/>Next</h1>
     </div>
-    <div class="col-1"></div>
-    <div class="col-5">
+    <div class="col-sm-6">
       <div class="blog_footer_week">Week 6</div>
       <h2>Racing Down Three Lanes</h2>
       <p>Our team shifted to a rapid design, build, testing phase this week! Part of the change in our work has been to move into parallel lanes so we can move faster while checking in together.</p>
     </div>
-    <div class="col-1"></div>
-    <div class="col-1">
+    <div class="col-sm-1">
       <a class="all_posts" href="{{ url_for('blog_week_6') }}">Read More</a>
     </div>
   </div>
