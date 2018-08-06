@@ -1660,16 +1660,19 @@ section#quote-1 .subhead-dark {
 
 section#goal {
   min-height: 100vh;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
+  background-image: url('../assets/images/sketches.png');
+  background-size: cover;
+  background-position-y: -200px;
 }
 
 section#goal h1 {
-  color: #FCBC00;
+  /*color: #FCBC00;*/
 }
 
 section#goal h1:after {
-  background-image: url('../assets/images/arrows-white.png');
+  /*background-image: url('../assets/images/arrows-white.png');*/
 }
 
 section#goal p {
@@ -1695,11 +1698,21 @@ section#goal li {
   font-family: Roboto-Bold;
   color: #000000;
   background-color: #FFFC9C;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.14);  
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  section#goal li {
+    font-size: 14px;
+    padding: 4px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
 section#goal li.custom {
-  border: solid 1px #000000;
-  box-shadow: 5px 5px 0px -1px #FFFC9C, 5px 5px 0px 0px #000000;  
+  /*border: solid 1px #000000;*/
+  /*box-shadow: 5px 5px 0px -1px #FFFC9C, 5px 5px 0px 0px #000000;  */
 }
 
 body .ui_box__inner .progress {
