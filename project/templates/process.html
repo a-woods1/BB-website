@@ -25,15 +25,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
   </head>
-  <body id="main">
+  <body id="evaluation">
     <!--<div id="for_testing"></div>-->
     {% include "header.html" %}
     <div id="page_title">
       <div class="row">
-        <div id="heading" class="col-lg-7 col-sm-11">
+        <div id="heading" class="col-lg-7 col-sm-12">
           How do we know that B READY is a successful design?
         </div>
-        <div class="col-6"></div>
       </div>
     </div>
     <!-- section1 -->
@@ -44,11 +43,10 @@
             <div id="subhead">
               <h1> OVERVIEW </h1>
               <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                  The need for B READY emerged from three months of research with our client during our Spring semester. Based on the problems that we identified, creating a web app to help recruiting coordinators and candidates with disabilities handle accommodation requests was important. Candidates with disabilities were not always sure if they should disclose, and recruiters an recruiting coordinators did not always know how to best handle accommodation requests. 
-                  <br/><br/>
-                  However, how could we ensure that whatever we built would successfully address these problems? Our team used further research to both create a framework for measurement and test whether or not we were achieving the right results. <br/> <br/>
-                </div>
+                  <span class="col-sm-12 col-md-4 lede">The need for B READY emerged from three months of research with our client during our Spring semester.</span>
+                  <p class="col-sm-12 col-md-4">Based on the problems that we identified, creating a web app to help recruiting coordinators and candidates with disabilities handle accommodation requests was important. Candidates with disabilities were not always sure if they should disclose, and recruiters an recruiting coordinators did not always know how to best handle accommodation requests.</p>
+                  <p class="col-sm-12 col-md-4">
+                  However, how could we ensure that whatever we built would successfully address these problems? Our team used further research to both create a framework for measurement and test whether or not we were achieving the right results.</p>
               </div>
             </div>
           </div>
@@ -61,20 +59,42 @@
         <div class="container">        
         <h1 id = "hidden"> KEY EVALUATION METRICS </h1>
         <div class="row">
-          Our team decided to measure the success of our designs using the following criteria for each group. <br/><br/>
+          <h1 class="col-sm-12 col-md-12">Evaluation Metrics</h1>
+          <span class="col-sm-12 col-md-4 lede">
+          Our team decided to measure the success of our designs using the following criteria for each group.</span>
         </div>
         <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <b>Candidates with Disabilities</b><br/><br/>
-            <input type="checkbox" checked> Understand <br/> Do I understand what is required for this stage of the interview? <br> <br/>
-            <input type="checkbox" checked> Evaluate <br/> Can I identify what I might need in terms of accommodation for this stage of the interview? <br> <br/>
-            <input type="checkbox" checked> Act <br/> Do I feel confident about requesting an accommodation? <br> <br/>
+          <div class="col-md-6 col-sm-12 candidate">
+            <h3>Candidates with Disabilities</h3>
+            <ul>
+              <li>            
+                <h4>Understand</h4>
+                <p>Do I understand what is required for this stage of the interview?</p>
+              </li>
+              <li>
+                <h4>Evaluate</h4>
+                <p>Can I identify what I might need in terms of accommodation for this stage of the interview?</p>
+              </li>
+              <li>
+                <h4>Act</h4>
+                <p>Do I feel confident about requesting an accommodation?</p>
+              </li>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <b>Recruiting Coordinators</b><br/><br/>
-            <input type="checkbox" checked> Understand <br/> Do I understand what this candidate needs? <br> <br/>
-            <input type="checkbox" checked> Evaluate <br/> What do I have the power to do to implement this request? <br> <br/>
-            <input type="checkbox" checked> Act <br/> Can I easily implement this request? <br> <br/>
+          <div class="col-md-6 col-sm-12 recruiting">
+            <h3>Recruiting Coordinators</h3>
+            <ul>
+              <li>
+                <h4>Understand</h4>
+                <p>Do I understand what this candidate needs?</p>
+              </li>
+              <li>
+                <h4>Evaluate</h4>
+                <p>What do I have the power to do to implement this request?</p>
+              </li>
+              <li>
+                <h4>Act</h4>
+                <p>Can I easily implement this request?</p>
+              </li>
           </div>
         </div>
       </div>

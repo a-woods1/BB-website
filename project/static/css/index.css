@@ -2145,7 +2145,7 @@ section#calculator h3 {
   color: #000000;
   letter-spacing: 2.67px;
   padding-left: 24px;
-  padding-top: 20px;
+  padding-top: 20px; 
 }
 
 section#calculator .disclose {
@@ -2334,6 +2334,82 @@ section#opportunity .item span {
   text-transform: uppercase;
   margin-bottom: 8px;
 }
+
+
+/* EVALUATION - GENERIC */
+#evaluation section .container {
+  background-color: transparent;
+}
+
+/* EVALUATION - OVERVIEW */
+
+#evaluation #eval-overview {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+#evaluation #eval-overview .lede {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* EVALUATION - CHECKLIST */
+
+#evaluation #eval-checklist {
+  background-color: #FCBC00;
+}
+
+#evaluation #eval-checklist .lede {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#evaluation #eval-checklist .candidate {
+  padding: 24px;
+  background-color: #f7f7f7;
+}
+
+#evaluation #eval-checklist .recruiting {
+  padding: 24px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#evaluation #eval-checklist h3 {
+  font-size: 20px;
+  margin-bottom: 48px;
+  border-bottom: 4px #fcbc00 solid;   
+  text-transform: none;
+}
+
+#evaluation #eval-checklist h4 {
+  font-size: 16px;  
+  margin-bottom: 8px;
+}
+
+#evaluation #eval-checklist p {
+  margin-bottom: 32px;
+}
+
+#evaluation #eval-checklist li {
+  position: relative;
+  padding-left: 24px;
+}
+
+#evaluation #eval-checklist li:before {
+  content:' ';
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+  background-color: #FCBC00;
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 0;
+}
+
+/* EVALUATION - SUCCESS-CANDIDATES */
+
 
 body .ui_box__inner .progress {
   width: 100%;
