@@ -1685,8 +1685,29 @@ body .ui_box {
   transition-property: transform,background,-webkit-transform;
   transition-duration: .3s;
     text-align: center;
+}
+
+
+body .ui_box_2 {
+  height: 370px;
+  padding:50px;
+  position: relative;
+  margin-top:10px;
+  background: #3d3d3d;
+  box-shadow: -1px 0px rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition-property: background,-webkit-transform;
+  transition-property: transform,background;
+  transition-property: transform,background,-webkit-transform;
+  transition-duration: .3s;
+    text-align: center;
 
 }
+
+
+
 
 body .ui_box__inner span {
   font-size: 30px;
@@ -1841,6 +1862,16 @@ section#client p {
   height: 120%;
   z-index: -1;
 }
+
+.flyout-2 {
+  position: relative;
+  padding: 32px;
+  display: block;
+  background-color: #ffffff;
+  box-shadow: 0 12px 14px 0 rgba(0,0,0,0.50);
+  z-index: auto;  
+}
+
 
 .lede {
   display: block;
@@ -3046,6 +3077,9 @@ ul li{
   max-width:100%;
   margin-bottom:20px;
   margin-top:20px;
+  padding-left: 25%;
+  padding-right:25%;
+  padding-bottom:5%;
   border-radius: 50%;
 }
 
@@ -3092,27 +3126,6 @@ ul li{
   border-style: solid;
 }
 
-/*
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(odd) div::before {
-  left: -15px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent #e2e2e2 transparent transparent;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -15px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent #e2e2e2;
-}
-*/
 
 
 #recruiter-timeline div{
@@ -3170,7 +3183,7 @@ time {
   #candidate-timeline div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #e2e2e2 transparent transparent;
   }
 }
 
@@ -3335,3 +3348,169 @@ textarea {
     animation-play-state: paused;
 }
 
+/* SOLUTION - CANDIDATE */
+
+section#candidatefeatures span.lede {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+section#candidatefeatures h1:after {
+  background-image: url('../assets/images/arrows-yellow.png');
+}
+
+
+section#candidatefeatures .ui_box span.corner {
+  display: block;
+  position: absolute;
+  right: -10px;
+  left: auto;  
+  top: 0;
+  margin: 0;
+  transform: none;
+  transform: rotateZ(45deg);
+}
+
+section#candidatefeatures .ui_box {
+  display: block;
+  text-align: left;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6F6F6F;
+  text-align: left;
+  background-color: #ffffff;
+  max-height: 156px;
+  padding-left: 24px;
+  padding-top: 32px;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.11);
+  box-sizing: border-box;
+  max-height: 400px;
+  transition: all 200ms linear;  
+}
+
+section#candidatefeatures .ui_box:hover {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.20);
+  transition: all 200ms linear;
+}
+
+section#candidatefeatures .ui_box:before {
+  content:' ';
+}
+
+section#candidatefeatures .ui_box span {
+  font-family: Roboto-Black;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+section#candidatefeatures p {
+  color: #6A6A6A;
+  font-size: 16px;  
+}
+
+/* SOLUTION - COORDINATOR */
+
+section#coordinatorfeatures{
+  background-color:black;
+}
+
+section#coordinatorfeatures span.lede {
+  font-size: 20px;
+  line-height: 24px;
+  color:white;
+}
+
+section#coordinatorfeatures h1{
+color:white;
+}
+
+section#coordinatorfeatures h1:after {
+  background-image: url('../assets/images/arrows-yellow.png');
+}
+
+
+section#coordinatorfeatures .ui_box span.corner {
+  display: block;
+  position: absolute;
+  right: -10px;
+  left: auto;  
+  top: 0;
+  margin: 0;
+  transform: none;
+  transform: rotateZ(45deg);
+}
+
+section#coordinatorfeatures .ui_box {
+  display: block;
+  text-align: left;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #6F6F6F;
+  text-align: left;
+  background-color: #ffffff;
+  max-height: 156px;
+  padding-left: 24px;
+  padding-top: 32px;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.11);
+  box-sizing: border-box;
+  max-height: 400px;
+  transition: all 200ms linear;  
+}
+
+section#coordinatorfeatures .ui_box:hover {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.20);
+  transition: all 200ms linear;
+}
+
+section#coordinatorfeatures .ui_box:before {
+  content:' ';
+}
+
+section#coordinatorfeatures {
+  background-color: black;
+}
+
+section#coordinatorfeatures .ui_box span {
+  font-family: Roboto-Black;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 3px;
+}
+
+section#coordinatorfeatures p {
+  color: white;
+  font-size: 16px;  
+}
+
+
+/*stop animations*/
+section.timeline button#stop-animation-btn.btn--default {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  font-family: Roboto-Black;
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100px;
+  line-height: 12px;  
+  background-color: #ffffff;
+  border: solid 1px #000000;
+  box-shadow: 5px 5px 0px -1px #ffffff, 5px 5px 0px 0px #000000;  
+}
+
+section.timeline button#stop-animation-btn.btn--default:active {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0px -1px #ffffff, 2px 2px 0px 0px #000000;
+}
