@@ -2366,6 +2366,11 @@ section#opportunity .item span {
   
 }
 
+#evaluation section button#stop-animation-btn.btn--default  {
+    top: -40px;
+    right: 0;
+}
+
 #evaluation .quote {
   background-color: #282828;
   padding-top: 72px;
@@ -3848,7 +3853,8 @@ section#coordinatorfeatures p {
 
 
 /*stop animations*/
-section.timeline button#stop-animation-btn.btn--default {
+section.timeline button#stop-animation-btn.btn--default,
+section button#stop-animation-btn.btn--default {
   position: absolute;
   top: 32px;
   right: 50px;
@@ -3865,7 +3871,8 @@ section.timeline button#stop-animation-btn.btn--default {
   box-shadow: 5px 5px 0px -1px #ffffff, 5px 5px 0px 0px #000000;  
 }
 
-section.timeline button#stop-animation-btn.btn--default:active {
+section.timeline button#stop-animation-btn.btn--default:active,
+section button#stop-animation-btn.btn--default:active {
   transform: translate(3px, 3px);
   box-shadow: 2px 2px 0px -1px #ffffff, 2px 2px 0px 0px #000000;
 }
