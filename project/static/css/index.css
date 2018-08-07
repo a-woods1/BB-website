@@ -537,6 +537,16 @@ section#blog_posts ul li a p {
   padding: 0;
 }
 
+
+section#blog_posts h1{
+  font-family: Roboto-Black;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+
 section#blog_posts ul li#blog-10 .thumbnail {
   background-image: url('../assets/images/jp-office.png');
 }
@@ -3493,7 +3503,7 @@ ul li{
   border-color: transparent transparent transparent #e2e2e2;
 }
 
-time {
+.timeline li p {
   display: block;
   font-size: 1.2rem;
   font-weight: bold;
