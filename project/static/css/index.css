@@ -1985,12 +1985,13 @@ img.tri-icons {
   transform: translateY(-50%);
 }
 
-@media screen and (max-width: 767px) and (min-width: 0px) {
+@media screen and (max-width: 992px) and (min-width: 0px) {
 
   img.tri-icons {
     width: 20%;
     margin-top: 10px;
     margin-bottom: 20px;
+    max-width: 64px;
   }
 
 }
@@ -2008,7 +2009,7 @@ section.quote blockquote {
 section.quote blockquote:before {
   content: ' ';
   display: block;
-  width: 263px;
+  width: 270px;
   height: 200px;
   background-image: url('../assets/images/quote-marks.png');
   position: absolute;
@@ -2029,6 +2030,14 @@ section.quote blockquote span {
   color: #FFFFFF; 
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+
+  section.quote blockquote span {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+}
 section.quote span.cite {
   display: block;
   font-family: Roboto-Black;
@@ -2229,7 +2238,6 @@ section#model h1:after {
   background-image: url('../assets/images/arrows-yellow.png');
 }
 
-
 section#model .ui_box span.corner,
 section#eval-success-candidates .ui_box span.corner {
   display: block;
@@ -2348,6 +2356,12 @@ section#opportunity .item span {
   
 }
 
+#evaluation .quote {
+  background-color: #282828;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
 /* EVALUATION - OVERVIEW */
 
 #evaluation #eval-overview {
@@ -2462,13 +2476,209 @@ section#eval-checklist p {
 /* EVALUATION - CHECKLIST */
 #evaluation section#eval-success-candidates {
   padding-top: 72px;
-  background-color: #f7f7f7;
+  background-color: #fcbc00;
+  padding-bottom: 72px;
 }
 
 #evaluation section#eval-success-candidates #subhead {
-  background-color: #f7f7f7;
+  background-color: #fcbc00;
 }
 
+/* EVALUATION - COMPARISONS */
+
+section#eval-candidate-comparison {
+  background-color: #f7f7f7;
+  color: #000000;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+section#eval-recruiting-comparison {
+  background-color: #000000;
+  color: #ffffff;
+  padding-top: 72px;  
+  padding-bottom: 72px;  
+}
+
+section#eval-recruiting-comparison h1 {
+  color: #ffffff;
+}
+
+section#eval-recruiting-comparison .comparison {
+  text-align: left;
+  background-color: #171717;  
+  padding: 0;
+  height: 100%;
+}
+
+section#eval-candidate-comparison .comparison {
+  text-align: left;
+  background-color: #ffffff;  
+  padding: 0;
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.11); 
+  height: 100%;   
+}
+
+#evaluation section#eval-candidate-comparison .comparison h3 {
+  color: #000000;
+  font-size: 20px;
+}
+
+#evaluation section#eval-recruiting-comparison .comparison h3 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#evaluation section#eval-candidate-comparison .comparison p {
+  color: #6F6F6F;
+  margin: 0;
+}
+
+#evaluation section#eval-recruiting-comparison .comparison p {
+  color: #FCBC00;
+  margin: 0;
+}
+
+#evaluation section#eval-recruiting-comparison .comparison h4,
+#evaluation section#eval-candidate-comparison .comparison h4 {
+  font-family: Roboto-Black;
+  font-size: 16px;
+}
+
+#evaluation section#eval-candidate-comparison .comparison .before,
+#evaluation section#eval-candidate-comparison .comparison .after {
+  background-color: #F9F9F9;
+  width: 100%;
+  margin: 0;
+  border-top: solid 2px #EFEFEF;
+  padding: 24px;
+  min-height: 170px;
+}
+#evaluation section#eval-recruiting-comparison .comparison .before,
+#evaluation section#eval-recruiting-comparison .comparison .after {
+  background-color: #0F0F0F;
+  width: 100%;
+  margin: 0;
+  border-top: solid 2px #000000;
+  padding: 24px;
+  min-height: 170px;  
+}
+
+#evaluation section#eval-candidate-comparison .comparison .inner_UEA,
+#evaluation section#eval-recruiting-comparison .comparison .inner_UEA {
+  position: relative;
+  padding: 24px;
+  font-family: Roboto-Bold;
+  min-height: 170px;  
+}
+
+section#eval-candidate-comparison span.corner,
+section#eval-recruiting-comparison span.corner {
+  transform: rotate(45deg);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #FCBC00; 
+}
+
+section#eval-candidate-comparison span.corner {
+  left: auto;
+  top: 4px;
+  right: -6px;
+}
+
+section#eval-recruiting-comparison span.corner {
+  left: auto;
+  top: 26px;
+  right: -6px;
+}
+
+#evaluation section#eval-candidate-comparison .comparison .before h4,
+#evaluation section#eval-recruiting-comparison .comparison .before h4 {
+  color: #FF5555;
+}
+
+#evaluation section#eval-candidate-comparison .comparison .before h4:before,
+#evaluation section#eval-candidate-comparison .comparison .after h4:before,
+#evaluation section#eval-recruiting-comparison .comparison .before h4:before,
+#evaluation section#eval-recruiting-comparison .comparison .after h4:before {
+  content:' ';
+  width: 12px;
+  height: 12px;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+
+#evaluation section#eval-candidate-comparison .comparison .before h4:before,
+#evaluation section#eval-recruiting-comparison .comparison .before h4:before {
+  background-image: url('../assets/images/breakdown.png');
+}
+
+#evaluation section#eval-candidate-comparison .comparison .after h4:before,
+#evaluation section#eval-recruiting-comparison .comparison .after h4:before {
+  background-image: url('../assets/images/checkmark.png');
+}
+
+#evaluation section#eval-recruiting-comparison .comparison .before p {
+  color: #FFFFFF;
+}
+
+#evaluation section#eval-candidate-comparison .comparison .after h4,
+#evaluation section#eval-recruiting-comparison .comparison .after h4 {
+  color: #50E38C;
+}
+
+#evaluation section#eval-recruiting-comparison .comparison .after p {
+  color: #FFFFFF;
+}
+
+/* EVALUATION - CHANGES */
+
+section.eval-changes,
+section.eval-change #sub-section {
+  background-color: #E4E4E4;
+}
+
+section.eval-changes ul li {
+  display: block;
+  padding: 16px;
+}
+
+section.eval-changes ul li p {
+  /*background-color: #fcbc00;*/
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  padding-top: 24px;
+  margin-bottom: 32px;
+  font-family: Roboto-Bold;
+  position: relative;
+}
+
+section.eval-changes ul li p:before {
+  content:' ';
+  background-color: #50E38C;
+  width: 100%;
+  height: 8px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.eval-changes ul li p:after {
+  content:' ';
+  display: block;  
+  background-image: url('../assets/images/checkmark.png');
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
 
 body .ui_box__inner .progress {
   width: 100%;
