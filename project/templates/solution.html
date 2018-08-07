@@ -25,7 +25,7 @@
 
 </head>
 
-  <body id="main">
+  <body id="solution">
     <!--<div id="for_testing"></div>-->
 {% include "header.html" %}
     <!-- Header -->
@@ -33,7 +33,7 @@
  <div id="page_title">
     <div class="row">
       <div id="heading" class="col-lg-7 col-sm-11">
-        B READY: A system to reduce uncertainty for candidates with disabilities and recruiting coordinators.
+        A system to reduce uncertainty for candidates with disabilities and recruiting coordinators.
   </div>
   <div class="col-6">
 </div>
@@ -41,36 +41,57 @@
   </div>
 
 <!--intro to product-->
- <section id="problem">
+
+ <section id="problem" class="dots">
       <div class="row">
         <div class="col-sm-12">
-          <div class="subhead dots">
-                
-
+          <div class="subhead">
             <h1>THE PRODUCT</h1>
             <div class="row">
-              <div class="col-lg-12 col-sm-12" id="problem-text">
-                <p>
-                   B READY is a web app with an interface for candidates, and Recruiting Coordinators.  <br/><br/>
-
-            The candidate side contains key information about the tasks, tool and environment involved with the current interview stage of the applicant. Candidates are also able to navigate 360 street-view style photospheres to get a sense of the environment if relevant. Finally, the candidate view includes a menu of accessibility accommodation options which candidates can open and select. <br/> <br/>
-
-            The Recruiting side contains step by step directions and controls for implementing accessibility accommodations. There is also space in the Recruiting side of the tool for communicating to candidates, Employee Relations, and hiring teams. <br/><br/>
-
-            The following story demonstrates how the two sides work together to help both sides understand, evaluate and act.
-                </p>
-               
+              <div class="col-lg-4 col-sm-12">
+                <p><span class="lede">B READY is a web app with an interface for candidates and recruiting coordinators.</span></p>
               </div>
-            </div>
+              <div class="col-lg-8 col-sm-12">
+                  <img src="{{ url_for('static', filename='assets/images/mockups-both.png') }}" alt="The B READY interface for candidates and recruiters."/>
+              </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
+  </section>
+  <section id="candidate-preview">
+      <div class="row">
+        <div class="subhead">
+          <div class="col-sm-12 col-md-4 flyout">
+        <h1>B READY FOR CANDIDATES</h1>
+        <p>The candidate application contains key information about the tasks, tools and environment involved with the current interview stage of the applicant. Candidates are also able to navigate 360 street-view style photospheres to get a sense of the environment if relevant. Finally, the candidate view includes a menu of accessibility accommodation options which candidates can open and select.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section id="recruiting-preview">
+      <div class="row">
+        <div class="subhead">
+          <div class="col-sm-12 col-md-4 flyout">
+        <h1>B READY FOR RECRUITERS</h1>          
+        <p>The Recruiting application contains step-by-step directions and controls for implementing accessibility accommodations. There is also space in the Recruiting side of the tool for communicating to candidates, Employee Relations, and hiring teams.</p>
+      </div>
+      </div>
+    </div>
+  </section>  
+<section id="preface">
+  <div class="row">
+    <div class="subhead">
+      <div class="col-sm-12 col-md-4">
+    <h1>B READY IN PRACTICE</h1>      
+   <p><span class="lede">The following story demonstrates how the two sides of the application work together to help both parties understand, evaluate and act.</span></p>
+ </div>
+  <button class="btn--default fill" id="stop-animation-btn"> Pause Animations on this Page </button> 
+ </div>
+</div>
+</section>
 
               <section class="timeline">
-                            <button class="btn--default fill" id="stop-animation-btn"> Pause Animations on this Page </button>
-
                 <ul role="list">
                   <li role = "listitem" id ="candidate-timeline">
                     <div aria-label ="" class = "animatable fadeInDown animationDelay">
@@ -290,7 +311,7 @@
 
             For people with visual impairments we have designed and structured the app so it can be read with a screen reader and included alternate content for any featured images.  <br/><br/>
 
-            We've also considered other elements of web accessibility, using the IBM heuristics listed <a href="https://usabilitynews.bcs.org/content/conWebDoc/45729"> here, at https://usabilitynews.bcs.org/content/conWebDoc/45729</a> including ensuring appropriate color contrast and not relying solely on color as an indicator within the design.<br/>
+            We've also considered other elements of web accessibility, using the IBM heuristics listed <a href="https://usabilitynews.bcs.org/content/conWebDoc/45729"> here</a>, including ensuring appropriate color contrast and not relying solely on color as an indicator within the design.<br/>
 
             </p>
           </div>

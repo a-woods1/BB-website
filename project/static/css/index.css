@@ -56,14 +56,14 @@ body#main {
   }
 
 #logo {
-  font-family: Roboto-Black;
+/*  font-family: Roboto-Black;
   background-color: black;
   padding: 10px;
   font-size: 16px;
   color: white;
   line-height: 1;
-  white-space: nowrap;
-  box-shadow: 3px 3px #3e82f7;
+  white-space: nowrap;*/
+  /*box-shadow: 3px 3px #3e82f7;*/
 }
 
 .role {
@@ -84,7 +84,7 @@ body#main {
 #heading {
   font-family: Roboto-Black;
   font-size: 56px;
-  padding-left: 5%;
+  padding-left: 7%;
   padding-right: 5%;
   line-height: 66px;
 }
@@ -195,6 +195,25 @@ h6 {
   margin-left: 0;
   margin-right: 0;
 }
+
+#logo img {
+  max-width: 100px; 
+  border: 1px solid #ffffff;
+}
+
+#logo:hover img {
+  max-width: 100px;
+  border: none;  
+  border: 1px solid #FCBC00;
+  /*box-shadow: 5px 5px 0px -1px #353535, 5px 5px 0px 0px #ffffff;  */
+}
+
+/*#logo:active img {
+  max-width: 100px;
+  border: 1px solid #ffffff;
+  transform: translate(3px, 3px);  
+  box-shadow: 2px 2px 0px -1px #353535, 2px 2px 0px 0px #ffffff;  
+}*/
 
 #main_ul {
   list-style-type: none;
@@ -357,6 +376,11 @@ section#blog_posts ul li a {
 }
 
 section#blog_posts ul li a .blog_week {
+  margin: 0;
+  padding: 0;
+}
+
+section#blog_posts ul li a .blog_week h2 {
   margin: 0;
   padding: 0;  
   font-family: Roboto-Black;
@@ -1279,6 +1303,7 @@ section#blog_posts ul li#blog-1 .thumbnail {
     line-height: 1;
     white-space: nowrap;
   }
+
   #role {
     margin-left: 20px;
     font-size: 13px;
@@ -2358,6 +2383,11 @@ section#opportunity .item span {
 
 
 /* EVALUATION - GENERIC */
+
+body#evaluation {
+  overflow-x: hidden;
+}
+
 #evaluation section .container {
   background-color: transparent;
 }
@@ -3709,6 +3739,88 @@ textarea {
 }
 
 /* SOLUTION - CANDIDATE */
+
+#solution {
+  overflow-x: hidden;
+}
+
+#solution section a {
+  font-family: Roboto-Black;  
+  color: #000000;
+  display: inline;
+  border-bottom: 4px #fcbc00 solid;    
+}
+
+#solution section#coordinatorfeatures a {
+  color: #ffffff;
+}
+
+section#problem {
+    min-height: 50vh;
+}
+
+section#problem img {
+  display: block;
+  width: 70%;
+  position: absolute;
+  bottom: -160px;
+  right: 0;
+}
+
+section#candidate-preview {
+  padding-top: 72px;
+  height: 80vh;
+  background-image: url('../assets/images/laptop.png');
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-position-x: 700px;
+  background-position-y: 72px;
+  background-color: #FCBC00;
+}
+
+section#recruiting-preview {
+  height: 90vh;
+  padding-top: 72px;
+  background-image: url('../assets/images/terminal.png');
+  background-size: 700px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-position-y: 80px;
+  background-position-x: -100px;
+  background-color: #282828;
+  color: #000000;
+}
+
+section#recruiting-preview .flyout {
+  position: absolute;
+  right: 5%;
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  section#candidate-preview,
+  section#recruiting-preview {
+    background-image: none;
+  }
+
+  section#recruiting-preview .flyout {
+    position: relative;
+    right: auto;
+  }
+
+  section#problem img {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto;
+    margin-top: 64px    
+  }
+
+}
 
 section#candidatefeatures span.lede {
   font-size: 20px;
