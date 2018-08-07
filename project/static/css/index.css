@@ -3029,6 +3029,12 @@ body .ui_box_3 {
   transform: scale(2);
 }
 
+@media screen and (max-width: 767px) and (min-width: 0px) {
+  .client-icons {
+    display: none;
+  }
+}
+
 .corner {
   display: block;
   position: absolute;
